@@ -1,0 +1,155 @@
+// Shared skills data for both Skills.jsx and About.jsx
+
+export const skillCategories = [
+  {
+    id: "frontend",
+    title: "Frontend Development",
+    icon: "FiGlobe", // Use string for icon, import in component
+    color: "#6366f1",
+    description: "Creating responsive user interfaces with modern tools",
+  },
+  {
+    id: "backend",
+    title: "Backend Development",
+    icon: "FiServer",
+    color: "#8b5cf6",
+    description: "Building robust server-side applications",
+  },
+  {
+    id: "database",
+    title: "Database & Storage",
+    icon: "FiDatabase",
+    color: "#06b6d4",
+    description: "Data modeling and optimization across multiple DB types",
+  },
+  {
+    id: "tools",
+    title: "Tools & DevOps",
+    icon: "FiTool",
+    color: "#10b981",
+    description: "Development workflow and cloud deployment",
+  },
+];
+
+export const skillsData = {
+  frontend: [
+    {
+      name: "HTML",
+      level: 95,
+      icon: "🌐",
+      description: "Semantic markup and accessibility best practices",
+      experience: "2+ years",
+      projects: 25,
+    },
+    {
+      name: "CSS",
+      level: 90,
+      icon: "🎨",
+      description: "Responsive design, animations, and modern CSS features",
+      experience: "2+ years",
+      projects: 22,
+    },
+    {
+      name: "JavaScript",
+      level: 85,
+      icon: "🟨",
+      description: "ES6+, DOM manipulation, and modern JS features",
+      experience: "1+ years",
+      projects: 18,
+    },
+    {
+      name: "React",
+      level: 80,
+      icon: "⚛️",
+      description: "Building dynamic UIs with components, hooks, and state management",
+      experience: "1+ years",
+      projects: 15,
+    },
+    {
+      name: "Tailwind CSS",
+      level: 80,
+      icon: "💨",
+      description: "Utility-first CSS framework for rapid development",
+      experience: "1+ years",
+      projects: 10,
+    },
+    {
+      name: "Bootstrap",
+      level: 75,
+      icon: "🎯",
+      description: "Responsive grid system and component library",
+      experience: "2+ years",
+      projects: 18,
+    },
+  ],
+  backend: [
+    {
+      name: "Node.js",
+      level: 50,
+      icon: "🟢",
+      description: "Building backend services and REST APIs with Express",
+      experience: "2 months",
+      projects: 0,
+    },
+    {
+      name: "Express",
+      level: 50,
+      icon: "🚂",
+      description: "Creating APIs and handling server-side logic",
+      experience: "2 months",
+      projects: 0,
+    },
+    {
+      name: "Python",
+      level: 50,
+      icon: "🐍",
+      description: "General programming and backend fundamentals",
+      experience: "—",
+      projects: 0,
+    },
+  ],
+  database: [
+    {
+      name: "MySQL",
+      level: 85,
+      icon: "🐬",
+      description: "Relational database design and optimization",
+      experience: "1+ years",
+      projects: 15,
+    },
+    {
+      name: "MongoDB",
+      level: 70,
+      icon: "🍃",
+      description: "Document-based NoSQL database operations",
+      experience: "2+ years",
+      projects: 3,
+    },
+  ],
+  tools: [
+    {
+      name: "Git",
+      level: 85,
+      icon: "🐙",
+      description: "Version control and collaboration workflows",
+      experience: "2+ years",
+      projects: 25,
+    },
+    {
+      name: "Render",
+      level: 80,
+      icon: "🚀",
+      description: "Application hosting and deployment",
+      experience: "1+ years",
+      projects: 3,
+    },
+    {
+      name: "Firebase",
+      level: 75,
+      icon: "🔥",
+      description: "Real-time database and authentication services",
+      experience: "1+ years",
+      projects: 5,
+    },
+  ],
+};
