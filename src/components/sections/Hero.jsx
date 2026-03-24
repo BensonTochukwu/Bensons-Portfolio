@@ -12,7 +12,6 @@ import {
 } from 'react-icons/fi';
 import SEO from '../seo/SEO';
 import '../../styles/components/Hero.css';
-import CvPdf from '../../assets/Bensons CV.pdf';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -241,7 +240,7 @@ const Hero = () => {
               </button>
               
               <a 
-                href={CvPdf}
+                href="/Bensons CV.pdf"
                 className="hero__cta hero__cta--outline"
                 download="Bensons CV.pdf"
                 aria-label="Download CV"

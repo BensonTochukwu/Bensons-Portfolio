@@ -15,7 +15,6 @@ import {
   FiYoutube
 } from 'react-icons/fi';
 import '../../styles/layout/Footer.css';
-import CvPdf from '../../assets/Bensons CV.pdf';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -234,7 +233,7 @@ const Footer = () => {
                   <span>Get In Touch</span>
                 </button>
                 <a 
-                  href={CvPdf}
+                  href="/Bensons CV.pdf"
                   download="Bensons CV.pdf"
                   className="newsletter-btn newsletter-btn--secondary"
                 >
