@@ -540,11 +540,13 @@
    Matches counts like 1, 4, 7, 10... (3n+1). When the last row has a single item,
    this will place it in the center column. If you add 2 more items (making the
    last row full), the selector no longer matches and normal flow resumes. */
-.projects__grid > *:nth-child(3n + 1):last-child {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-self: center;
-  max-width: 95%;
+@media (min-width: 1024px) {
+  .projects__grid > *:nth-child(3n + 1):last-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    max-width: 95%;
+  }
 }
 
 .project-card {

@@ -1052,6 +1052,7 @@
   
   .cta-card {
     padding: 2rem;
+    overflow: visible; 
   }
   
   .cta-card__features {

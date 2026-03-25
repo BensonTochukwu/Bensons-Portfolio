@@ -128,7 +128,7 @@ const Hero = () => {
     "alumniOf": "Coding Academy",
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Full Stack Developer",
+      "name": "Frontend Developer",
       "description": "Specializing in both frontend and backend development, creating seamless user-centric applications"
     }
   };
@@ -136,7 +136,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero" ref={heroRef}>
       <SEO
-        title="Teco-Benson Tochukwu - Full Stack Developer"
+        title="Teco-Benson Tochukwu - Frontend Developer"
         description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
         keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         structuredData={structuredData}

@@ -763,11 +763,55 @@
   .hero__visual {
     order: 2;
   }
-  
+
+  .hero__scroll {
+    display: none;
+  }
+
   .hero__stats {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center; /* center the row of stats */
+    gap: 1.5rem;            /* space between each stat */
+  }
+
+  .hero__stat {
+    flex-direction: column; /* stack icon above number & label */
+    align-items: center;    /* center everything inside the card */
+    text-align: center;     /* center text */
+    padding: 1rem 1.25rem;
+    min-width: 150px;       /* optional: keep card from shrinking too much */
+  }
+
+  .hero__stat-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .hero__stat-number {
+    font-size: 1.75rem;
+  }
+
+  .hero__stat-label {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    justify-content: center; /* center the buttons */
+    gap: 1.5rem;             /* space between buttons */
+    flex-wrap: wrap;         /* allow buttons to wrap if needed */
+  }
+
+  .hero__cta {
+    flex: 1 1 auto;          /* allow buttons to grow */
+    min-width: 300px;        /* ensure a decent width */
+    max-width: 400px;        /* optional: prevent huge stretching */
+    padding: 1.5rem 2.5rem;  /* bigger buttons */
+    font-size: 1.25rem;      /* bigger text */
+    text-align: center;      /* center text */
+  }
+
+  .hero__cta-icon {
+    font-size: 1.4rem;       /* slightly bigger icons */
   }
   
   .hero__social-links {
@@ -784,6 +828,19 @@
     font-size: clamp(2.25rem, 6vw, 3.5rem);
   }
   
+  .hero__name-text {
+    font-size: 2.8rem;
+  }
+
+  .hero__name-text.hero__name-text--accent {
+    font-size: 2.8rem;
+  }
+
+  .hero__role-prefix,
+  .hero__role-text {
+    font-size: 1.65rem;
+  }
+
   .hero__role {
     font-size: clamp(1.125rem, 3vw, 1.75rem);
     justify-content: center;
@@ -826,6 +883,19 @@
   .hero__name {
     font-size: clamp(2rem, 5.5vw, 3rem);
     margin-bottom: 1rem;
+  }
+
+  .hero__name-text {
+    font-size: 2.5rem; /* bigger than default if needed */
+  }
+
+  .hero__name-text.hero__name-text--accent {
+    font-size: 2.5rem; /* match accent text */
+  }
+
+  .hero__role-prefix,
+  .hero__role-text {
+    font-size: 1.75rem; /* increase role text for better visibility */
   }
   
   .hero__role {
@@ -901,7 +971,7 @@
   }
   
   .hero__scroll {
-    bottom: 1.5rem;
+    display: none;
   }
   
   .hero__scroll-text {
