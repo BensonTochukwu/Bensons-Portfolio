@@ -895,7 +895,7 @@
 
   .hero__role-prefix,
   .hero__role-text {
-    font-size: 1.75rem; /* increase role text for better visibility */
+    font-size: 1.55rem; /* increase role text for better visibility */
   }
   
   .hero__role {
