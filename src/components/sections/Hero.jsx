@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { 
   FiDownload, 
   FiArrowRight, 
@@ -18,6 +20,7 @@ const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef(null);
+  const navigate = useNavigate();
 
   const roles = [
     "Frontend Developer",
@@ -225,7 +228,7 @@ const Hero = () => {
             <div className="hero__actions">
               <button 
                 className="hero__cta hero__cta--primary"
-                onClick={() => scrollToSection('projects')}
+                onClick={() => navigate('/projects')}
               >
                 <span className="hero__cta-text">View My Work</span>
                 <FiArrowRight className="hero__cta-icon" />

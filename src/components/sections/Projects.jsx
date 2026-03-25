@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { projects } from "../../data/projects";
 import {
   FiGithub,
@@ -25,6 +26,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
   const projectsRef = useRef(null);
+  const navigate = useNavigate();
 
   const projectCategories = [
     { id: "all", label: "All Projects", count: 4 },
@@ -364,10 +366,7 @@ const Projects = () => {
                 <button
                   className="cta-btn cta-btn--primary"
                   onClick={() => {
-                    const contactSection = document.getElementById("contact");
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: "smooth" });
-                    }
+                    navigate("/", { state: { scrollTo: "contact" } });
                   }}
                 >
                   <span>Start a Project</span>

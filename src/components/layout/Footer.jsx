@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from "react-router-dom";
 import { 
   FiMail, 
   FiPhone,
@@ -19,6 +20,9 @@ import '../../styles/layout/Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,18 +35,18 @@ const Footer = () => {
   }, []);
 
   const quickLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'About', href: '#about', page: '/' },
+    { name: 'Skills', href: '#skills', page: '/skills' },
+    { name: 'Services', href: '#services', page: '/services' },
+    { name: 'Projects', href: '#projects', page: '/projects' },
+    { name: 'Contact', href: '#contact', page: '/' }
   ];
 
   const services = [,
-    { name: 'Frontend Development', href: '#services' },
-    { name: 'Full Stack (Coming Soon)', href: '#services' },
-    { name: 'UI/UX Implementation', href: '#services' },
-    { name: 'Performance Optimization', href: '#services' }
+    { name: 'Frontend Development', href: '/services' },
+    { name: 'Full Stack (Coming Soon)', href: '/services' },
+    { name: 'UI/UX Implementation', href: '/services' },
+    { name: 'Performance Optimization', href: '/services' }
   ];
 
   const socialLinks = [
@@ -105,6 +109,24 @@ const Footer = () => {
     }
   };
 
+  const handleQuickLink = (link) => {
+    if (link.page === location.pathname) {
+      // Already on the correct page
+      if (link.href) {
+        // Scroll to section (About / Contact)
+        const id = link.href.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Scroll to top (Skills / Services / Projects)
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      // Navigate to the page and pass info about scroll
+      navigate(link.page, { state: { scrollTo: link.href ? link.href.replace('#', '') : 'top' } });
+    }
+  };
+
   return (
     <>
       <footer className="footer">
@@ -157,7 +179,7 @@ const Footer = () => {
                 {quickLinks.map((link, index) => (
                   <li key={index}>
                     <button
-                      onClick={() => scrollToSection(link.href)}
+                      onClick={() => handleQuickLink(link)}
                       className="footer__link"
                     >
                       {link.name}
@@ -174,7 +196,7 @@ const Footer = () => {
                 {services.map((service, index) => (
                   <li key={index}>
                     <button
-                      onClick={() => scrollToSection(service.href)}
+                      onClick={() => navigate("/services")}
                       className="footer__link"
                     >
                       {service.name}
@@ -227,7 +249,9 @@ const Footer = () => {
               <div className="newsletter-card__actions">
                 <button 
                   className="newsletter-btn newsletter-btn--primary"
-                  onClick={() => window.location.href = "#"}
+                  onClick={() => {
+                    navigate("/", { state: { scrollTo: "contact" } });
+                  }}
                 >
                   <FiMail />
                   <span>Get In Touch</span>

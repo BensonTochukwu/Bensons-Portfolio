@@ -196,7 +196,7 @@ const Navbar = () => {
               <div className="mobile-menu__logo">
                 <div className="logo__icon">
                   <span className="logo__bracket">&lt;</span>
-                  <span className="logo__text">H</span>
+                  <span className="logo__text">B</span>
                   <span className="logo__bracket">/&gt;</span>
                 </div>
                 <div className="logo__content">
