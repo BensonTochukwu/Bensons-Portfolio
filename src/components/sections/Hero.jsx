@@ -45,7 +45,7 @@ const Hero = () => {
     {
       name: "LinkedIn",
       icon: FiLinkedin,
-      url: "https://www.linkedin.com/in/your-username",
+      url: "https://www.linkedin.com/in/tochukwu-teco-benson/",
       color: "#0A66C2"
     },
     {
