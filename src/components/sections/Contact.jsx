@@ -365,14 +365,14 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contact Benson - Full Stack Developer",
     "description": "Get in touch with Teco-Benson Tochukwu for web development services, technical consulting, and collaboration opportunities.",
-    "url": "https://mr-heritage.name.ng/",
+    "url": "https://bensons-portfolio.vercel.app//",
     "mainEntity": {
       "@type": "Person",
       "name": "Teco-Benson Tochukwu",
       "alternateName": ["Benson", "Tochukwu", "Tochukwu_dev"],
       "jobTitle": "Full Stack Developer",
       "email": "tecotochukwu@gmail.com",
-      "url": "https://mr-heritage.name.ng",
+      "url": "https://bensons-portfolio.vercel.app/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lagos",
@@ -404,7 +404,7 @@ const Contact = () => {
         title="Contact Benson - Frontend Developer"
         description="Get in touch with Teco-Benson Tochukwu for web development services, technical consulting, and collaboration opportunities. Available for freelance projects and full-time positions."
         keywords="Contact Benson, Teco-Benson Tochukwu Contact, Tochukwu Contact, Tochukwu_dev Contact, Teco-Benson Contact, Frontend Developer Contact, Web Development Services, Technical Consulting, Freelance Developer, Lagos Nigeria Developer"
-        url="https://mr-heritage.name.ng/"
+        url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />
       <div className="contact__background">

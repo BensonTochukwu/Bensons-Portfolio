@@ -96,7 +96,7 @@ const Services = () => {
     name: "Web Development Services - Benson",
     description:
       "Professional web development services specializing in Node.js backend development, React frontend development, and full-stack solutions.",
-    url: "https://mr-heritage.name.ng/",
+    url: "https://bensons-portfolio.vercel.app//",
     provider: {
       "@type": "Person",
       name: "Teco-Benson Tochukwu",
@@ -169,7 +169,7 @@ const Services = () => {
         title="Web Development Services - Benson"
         description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
         keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
-        url="https://mr-heritage.name.ng/"
+        url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />
       <div className="services__background">

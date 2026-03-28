@@ -71,7 +71,7 @@ const Skills = () => {
     name: "Technical Skills - Benson Portfolio",
     description:
       "Comprehensive overview of technical skills and expertise in React, JavaScript, and other modern web development technologies.",
-    url: "https://mr-heritage.name.ng/",
+    url: "https://bensons-portfolio.vercel.app//",
     mainEntity: {
       "@type": "Person",
       name: "Teco-Benson Tochukwu",
@@ -117,7 +117,7 @@ const Skills = () => {
         title="Technical Skills - Benson Portfolio"
         description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
         keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
-        url="https://mr-heritage.name.ng/"
+        url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />
       <div className="skills__background">

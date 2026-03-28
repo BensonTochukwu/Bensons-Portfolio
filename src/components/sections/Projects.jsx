@@ -100,7 +100,7 @@ const Projects = () => {
         title="Portfolio Projects - Benson"
         description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
         keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
-        url="https://mr-heritage.name.ng/"
+        url="https://bensons-portfolio.vercel.app//"
       />
       <div className="projects__background">
         <div className="projects__gradient projects__gradient--1"></div>

@@ -6,7 +6,7 @@ import {
 } from "../../data/skills";
 import SEO from "../seo/SEO";
 import "../../styles/components/About.css";
-import mrHPhoto from "/images/Benson.png";
+import Bphoto from "/images/Benson.png";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -148,7 +148,7 @@ const About = () => {
         <div className="about__intro-header">
           <div className="about__photo about__photo--circle-glow">
             <img
-              src={mrHPhoto}
+              src={Bphoto}
               alt="Teco-Benson Tochukwu"
               className="about__photo-img"
             />
@@ -311,7 +311,7 @@ const About = () => {
     name: "About Teco-Benson Tochukwu",
     description:
       "Learn about Teco-Benson Tochukwu, a passionate Frontend Developer from Lagos, Nigeria, specializing in React and modern JavaScript for responsive and user-focused web applications.",
-    url: "https://mr-heritage.name.ng/",
+    url: "https://bensons-portfolio.vercel.app//",
     mainEntity: {
       "@type": "Person",
       name: "Teco-Benson Tochukwu",
@@ -353,7 +353,7 @@ const About = () => {
         title="About Me - Teco-Benson Tochukwu"
         description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
         keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
-        url="https://mr-heritage.name.ng/"
+        url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />
       <div className="about__background">

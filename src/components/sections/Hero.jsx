@@ -108,8 +108,8 @@ const Hero = () => {
     "alternateName": ["Benson", "Tochukwu", "Tochukwu_dev"],
     "jobTitle": "Full Stack Developer",
     "description": "Full Stack Developer specializing in both frontend and backend development. Creating exceptional digital experiences through clean code and innovative design, building seamless user-centric applications.",
-    "url": "https://mr-heritage.name.ng",
-    "image": "https://mr-heritage.name.ng/Mr%20Heritage%20Profile.png",
+    "url": "https://bensons-portfolio.vercel.app/",
+    "image": "https://bensons-portfolio.vercel.app//Benson%20Profile.png",
     "sameAs": [
       "https://github.com/BensonTochukwu",
     ],

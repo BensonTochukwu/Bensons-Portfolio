@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mr-heritage.name.ng/</loc>
+    <loc>https://bensons-portfolio.vercel.app//</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mr-heritage.name.ng/about</loc>
+    <loc>https://bensons-portfolio.vercel.app//about</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mr-heritage.name.ng/skills</loc>
+    <loc>https://bensons-portfolio.vercel.app//skills</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mr-heritage.name.ng/services</loc>
+    <loc>https://bensons-portfolio.vercel.app//services</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mr-heritage.name.ng/projects</loc>
+    <loc>https://bensons-portfolio.vercel.app//projects</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mr-heritage.name.ng/contact</loc>
+    <loc>https://bensons-portfolio.vercel.app//contact</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

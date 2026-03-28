@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mr-heritage.name.ng/sitemap.xml
+Sitemap: https://bensons-portfolio.vercel.app//sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
