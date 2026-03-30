@@ -219,24 +219,21 @@ const Navbar = () => {
                 {navigationItems.map((item, index) => (
                   <li key={item.id} className="mobile-nav__item">
                     {["about", "contact"].includes(item.id) ? (
-                      <a
+                      <Link
                         className={`mobile-nav__link ${
                           activeSection === item.id
                             ? "mobile-nav__link--active"
                             : ""
                         }`}
-                        href={`#${item.id}`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          scrollToSection(item.id);
-                          closeMobile();
-                        }}
+                        to="/"
+                        state={{ scrollTo: item.id }}
+                        onClick={closeMobile}                        
                         style={{ "--delay": `${index * 0.1}s` }}
                       >
                         <span className="mobile-nav__number">0{index + 1}</span>
                         <span className="mobile-nav__text">{item.label}</span>
                         <span className="mobile-nav__arrow">→</span>
-                      </a>
+                      </Link>
                     ) : (
                       <Link
                         className={`mobile-nav__link ${
