@@ -37,10 +37,10 @@ const Projects = () => {
 
 
   const stats = [
-    { number: "4", label: "Featured Projects", icon: FiCode },
+    { number: "2", label: "Featured Projects", icon: FiCode },
     { number: "100%", label: "Completion Rate", icon: FiCheck },
     // { number: "5.0", label: "Average Rating", icon: FiStar },
-    { number: "4", label: "Total Projects", icon: FiTrendingUp },
+    { number: "6", label: "Total Projects", icon: FiTrendingUp },
   ];
 
   useEffect(() => {
