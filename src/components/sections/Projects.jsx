@@ -29,8 +29,8 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const projectCategories = [
-    { id: "all", label: "All Projects", count: 4 },
-    { id: "frontend", label: "Frontend", count: 4 },
+    { id: "all", label: "All Projects", count: 6 },
+    { id: "frontend", label: "Frontend", count: 6 },
     { id: "fullstack", label: "Full-Stack", count: 0 },
     { id: "backend", label: "Backend/API", count: 0 },
   ];
