@@ -81,7 +81,7 @@ const Contact = () => {
   const stats = [
     { number: '24h', label: 'Response Time', icon: FiClock },
     { number: '100%', label: 'Dedication', icon: FiHeart },
-    { number: '4+', label: 'Projects Delivered', icon: FiCheck },
+    { number: '6+', label: 'Projects Delivered', icon: FiCheck },
     { number: '2+', label: 'Years Working', icon: FiZap }
   ];
 

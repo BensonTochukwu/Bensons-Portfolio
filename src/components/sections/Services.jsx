@@ -36,7 +36,7 @@ const Services = () => {
   // Real Project Examples (to be linked when ready):
 
   const stats = [
-    { number: "4+", label: "Projects Delivered", icon: FiCheck },
+    { number: "6+", label: "Projects Delivered", icon: FiCheck },
     { number: "100%", label: "Dedication", icon: FiStar },
     { number: "24/7", label: "Learning Mode", icon: FiShield },
     { number: "2+", label: "Years Working", icon: FiTrendingUp },
