@@ -42,9 +42,9 @@ const Footer = () => {
     { name: 'Contact', href: '#contact', page: '/' }
   ];
 
-  const services = [,
+  const services = [
+    { name: 'FullStack Development', href: '/services' },
     { name: 'Frontend Development', href: '/services' },
-    { name: 'Full Stack (Coming Soon)', href: '/services' },
     { name: 'UI/UX Implementation', href: '/services' },
     { name: 'Performance Optimization', href: '/services' }
   ];

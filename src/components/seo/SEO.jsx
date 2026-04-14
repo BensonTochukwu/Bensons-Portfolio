@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 
 const SEO = ({
   title = "Teco-Benson Tochukwu | Benson - Full Stack Developer",
-  description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development.",
-  keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria",
+  description = "Full Stack developer specializing in MERN Stack (MongoDB, Express.js, React, Node.js) and modern JavaScript, building responsive and user-focused web applications.",
+  keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria",
   image = "/images/Benson.png",
   url = "https://bensons-portfolio.vercel.app/",
   type = "website",

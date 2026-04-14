@@ -23,10 +23,10 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const roles = [
-    "Frontend Developer",
-    "Growing Full Stack Developer",
+    "Full Stack Developer",
     "Problem Solver",
-    "Creative Developer"
+    "Creative Developer",
+    "Frontend and Backend Expert",
   ];
 
   const stats = [
@@ -131,7 +131,7 @@ const Hero = () => {
     "alumniOf": "Coding Academy",
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Frontend Developer",
+      "name": "Full Stack Developer",
       "description": "Specializing in both frontend and backend development, creating seamless user-centric applications"
     }
   };
@@ -139,9 +139,9 @@ const Hero = () => {
   return (
     <section id="home" className="hero" ref={heroRef}>
       <SEO
-        title="Teco-Benson Tochukwu - Frontend Developer"
-        description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
-        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
+        title="Teco-Benson Tochukwu - Full Stack Developer"
+        description = "Full Stack developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
+        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         structuredData={structuredData}
       />
       {/* Background Elements */}
@@ -202,7 +202,7 @@ const Hero = () => {
             {/* Description */}
             <p className="hero__description">
               I design and build modern web applications with a focus on performance and detail. 
-              As a frontend-focused developer evolving into full stack, I create user-centered products 
+              As a full stack developer, I create user-centered products 
               that combine clean interfaces with reliable functionality.
             </p>
 
@@ -317,7 +317,7 @@ const Hero = () => {
                   <span className="hero__code-text">
                     <span className="hero__code-property">  role</span>
                     <span className="hero__code-punctuation">: </span>
-                    <span className="hero__code-string">'Frontend Developer'</span>
+                    <span className="hero__code-string">'Full Stack Developer'</span>
                     <span className="hero__code-punctuation">,</span>
                   </span>
                 </div>
@@ -341,7 +341,7 @@ const Hero = () => {
                   <span className="hero__code-text">
                     <span className="hero__code-property">  passion</span>
                     <span className="hero__code-punctuation">: </span>
-                    <span className="hero__code-string">'Full Stack Development'</span>
+                    <span className="hero__code-string">'Artificial Intelligence'</span>
                   </span>
                 </div>
                 

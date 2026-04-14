@@ -36,7 +36,7 @@ const About = () => {
     },
     {
       icon: FiIcons.FiTrendingUp,
-      title: "Growing Full Stack Skills",
+      title: "Full Stack Skills",
       description:
         "Actively expanding into backend development to build complete, end-to-end applications.",
       color: "#06b6d4",
@@ -59,7 +59,7 @@ const About = () => {
   const journey = [
     {
       year: "2026",
-      title: "Frontend Developer (Transitioning to Full Stack)",
+      title: "Full Stack Developer",
       company: "Personal Projects",
       description:
         "Currently expanding into backend development using Node.js while continuing to build modern frontend applications with React.",
@@ -157,15 +157,15 @@ const About = () => {
             <h3 className="about__intro-title">
               Hi, I'm <span className="text-gradient">Teco-Benson Tochukwu</span>
             </h3>
-            <h4 className="about__intro-role">Frontend Developer</h4>
+            <h4 className="about__intro-role">Full Stack Developer</h4>
             <p className="about__intro-text">
-              I'm a frontend-focused developer from Lagos, Nigeria, who enjoys turning complex problems into clean, intuitive solutions. 
-              With solid experience in modern frontend development and a growing backend skill set, I build applications that combine 
-              engaging user interfaces with dependable functionality.
+              I am a Full Stack Developer based in Lagos, Nigeria, passionate about building clean, efficient, and user-focused web applications.
+               I specialize in modern frontend development while also working with backend technologies to deliver complete, end-to-end solutions.
+               I take a structured and detail-oriented approach to development, prioritizing clean code, scalability, and maintainability in every project I build.
             </p>
             <p className="about__intro-text">
-              I am focused on continuous improvement, consistently building and refining my skills through practical projects and hands-on experience. 
-              I take a structured approach to development, prioritizing clean code, performance, and maintainability across the applications I build.
+              I enjoy solving complex problems and translating them into simple, intuitive user experiences. My work focuses on building responsive 
+              interfaces, integrating APIs, and ensuring reliable application performance across the stack.
             </p>
           </div>
         </div>
@@ -310,23 +310,24 @@ const About = () => {
     "@type": "AboutPage",
     name: "About Teco-Benson Tochukwu",
     description:
-      "Learn about Teco-Benson Tochukwu, a passionate Frontend Developer from Lagos, Nigeria, specializing in React and modern JavaScript for responsive and user-focused web applications.",
+      "Learn about Teco-Benson Tochukwu, a passionate Full Stack Developer from Lagos, Nigeria, specializing in React and modern JavaScript for responsive and user-focused web applications.",
     url: "https://bensons-portfolio.vercel.app//",
     mainEntity: {
       "@type": "Person",
       name: "Teco-Benson Tochukwu",
       alternateName: ["Tochukwu", "Tochukwu_dev", "Benson"],
-      jobTitle: "Frontend Developer",
+      jobTitle: "Full Stack Developer",
       description:
-        "Passionate Frontend Developer from Lagos, Nigeria, who loves turning complex problems into simple, beautiful solutions. With modern frontend technologies.",
+        "Passionate Full Stack Developer from Lagos, Nigeria, who loves turning complex problems into simple, beautiful solutions. With modern frontend and backend technologies.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Lagos",
         addressCountry: "Nigeria",
       },
       knowsAbout: [
+        "Node.js",
         "Python",
-        "Django",
+        "Express",
         "React",
         "JavaScript",
         "HTML",
@@ -340,7 +341,7 @@ const About = () => {
       ],
       hasOccupation: {
         "@type": "Occupation",
-        name: "Frontend Developer",
+        name: "Full Stack Developer",
         description:
           "Specializing in React and modern JavaScript for responsive and user-focused web applications",
       },
@@ -351,8 +352,8 @@ const About = () => {
     <section id="about" className="about" ref={aboutRef}>
       <SEO
         title="About Me - Teco-Benson Tochukwu"
-        description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
-        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
+        description = "Full Stack developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
+        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />

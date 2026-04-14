@@ -392,7 +392,7 @@ const Contact = () => {
       ],
       "hasOccupation": {
         "@type": "Occupation",
-        "name": "Frontend Developer",
+        "name": "Full Stack Developer",
         "description": "Specializing in React and modern JavaScript for responsive and user-focused web applications"
       }
     }
@@ -401,9 +401,9 @@ const Contact = () => {
   return (
     <section id="contact" className="contact" ref={contactRef}>
       <SEO
-        title="Contact Benson - Frontend Developer"
+        title="Contact Benson - Full Stack Developer"
         description="Get in touch with Teco-Benson Tochukwu for web development services, technical consulting, and collaboration opportunities. Available for freelance projects and full-time positions."
-        keywords="Contact Benson, Teco-Benson Tochukwu Contact, Tochukwu Contact, Tochukwu_dev Contact, Teco-Benson Contact, Frontend Developer Contact, Web Development Services, Technical Consulting, Freelance Developer, Lagos Nigeria Developer"
+        keywords="Contact Benson, Teco-Benson Tochukwu Contact, Tochukwu Contact, Tochukwu_dev Contact, Teco-Benson Contact, Full Stack Developer Contact, Web Development Services, Technical Consulting, Freelance Developer, Lagos Nigeria Developer"
         url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />

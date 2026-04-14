@@ -115,8 +115,8 @@ const Skills = () => {
     <section id="skills" className="skills" ref={skillsRef}>
       <SEO
         title="Technical Skills - Benson Portfolio"
-        description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
-        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
+        description = "Full Stack developer specializing in MERN Stack (MongoDB, Express.js, React, Node.js) and modern JavaScript, building responsive and user-focused web applications."
+        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />

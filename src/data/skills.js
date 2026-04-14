@@ -85,7 +85,7 @@ export const skillsData = {
   backend: [
     {
       name: "Node.js",
-      level: 50,
+      level: 75,
       icon: "🟢",
       description: "Building backend services and REST APIs with Express",
       experience: "2 months",
@@ -93,7 +93,7 @@ export const skillsData = {
     },
     {
       name: "Express",
-      level: 50,
+      level: 75,
       icon: "🚂",
       description: "Creating APIs and handling server-side logic",
       experience: "2 months",
@@ -119,7 +119,7 @@ export const skillsData = {
     },
     {
       name: "MongoDB",
-      level: 70,
+      level: 75,
       icon: "🍃",
       description: "Document-based NoSQL database operations",
       experience: "2+ years",

@@ -36,7 +36,7 @@ const Services = () => {
   // Real Project Examples (to be linked when ready):
 
   const stats = [
-    { number: "6+", label: "Projects Delivered", icon: FiCheck },
+    { number: "9+", label: "Projects Delivered", icon: FiCheck },
     { number: "100%", label: "Dedication", icon: FiStar },
     { number: "24/7", label: "Learning Mode", icon: FiShield },
     { number: "2+", label: "Years Working", icon: FiTrendingUp },
@@ -132,9 +132,9 @@ const Services = () => {
       },
       {
         "@type": "Offer",
-        name: "Frontend Development",
+        name: "Full-Stack Development",
         description:
-          "Modern, responsive frontend applications built with React and modern CSS frameworks.",
+          "Modern, responsive full-stack applications built with React and modern CSS frameworks.",
         price: "2000",
         priceCurrency: "USD",
       },
@@ -167,8 +167,8 @@ const Services = () => {
     <section id="services" className="services" ref={servicesRef}>
       <SEO
         title="Web Development Services - Benson"
-        description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
-        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
+        description = "Full Stack developer specializing in MERN Stack (MongoDB, Express.js, React, Node.js) and modern JavaScript, building responsive and user-focused web applications."
+        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         url="https://bensons-portfolio.vercel.app//"
         structuredData={structuredData}
       />
@@ -309,7 +309,7 @@ const Services = () => {
               </h3>
               <p className="cta-card__description">
                 Let's discuss your requirements and create robust, scalable 
-                solutions together. I specialize in frontend development and 
+                solutions together. I specialize in full stack development and 
                 can help bring your ideas to life with clean, efficient code.
               </p>
               <div className="cta-card__actions">

@@ -29,10 +29,10 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const projectCategories = [
-    { id: "all", label: "All Projects", count: 6 },
-    { id: "frontend", label: "Frontend", count: 6 },
-    { id: "fullstack", label: "Full-Stack", count: 0 },
-    { id: "backend", label: "Backend/API", count: 0 },
+    { id: "all", label: "All Projects", count: 9 },
+    { id: "frontend", label: "Frontend", count: 8 },
+    { id: "fullstack", label: "Full-Stack", count: 1 },
+    { id: "backend", label: "Backend/API", count: 1 },
   ];
 
 
@@ -98,8 +98,8 @@ const Projects = () => {
     <section id="projects" className="projects" ref={projectsRef}>
       <SEO
         title="Portfolio Projects - Benson"
-        description = "Frontend developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
-        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Frontend Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
+        description = "Full Stack developer specializing in React and modern JavaScript, building responsive and user-focused web applications while growing into full stack development."
+        keywords = "Teco-Benson Tochukwu, Tochukwu_dev, Full Stack Developer, React Developer, JavaScript Developer, Node.js, Full Stack Developer, Web Developer Nigeria, Portfolio, Lagos Nigeria"
         url="https://bensons-portfolio.vercel.app//"
       />
       <div className="projects__background">
