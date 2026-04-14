@@ -26,7 +26,7 @@ const Hero = () => {
     "Full Stack Developer",
     "Problem Solver",
     "Creative Developer",
-    "Frontend and Backend Expert",
+    "Frontend Enthusiast",
   ];
 
   const stats = [
