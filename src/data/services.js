@@ -10,6 +10,65 @@ import {
 export const services = [
   {
     id: 1,
+    title: "Full Stack / Backend Development",
+    category: "backend",
+    icon: FiServer,
+    color: "#8b5cf6",
+    price: "Negotiable",
+    duration: "3-8 weeks",
+    rating: 5,
+    description:
+      "Scalable full stack web applications built with modern frontend and backend technologies. I develop responsive user interfaces, secure backend APIs, database integrations, and deployment-ready solutions tailored to business and personal projects.",
+    shortDescription:
+      "Full stack web applications with secure backend architecture and modern frontend experiences.",
+    features: [
+      "Node.js / Express backend development",
+      "REST API development",
+      "MongoDB / database integration",
+      "Authentication & authorization",
+      "Image upload handling",
+      "Role-based access control",
+      "Deployment & hosting setup",
+      "Frontend-backend integration"
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Cloudinary",
+      "JWT",
+      "REST APIs",
+      "Vercel / Render"
+    ],
+    deliverables: [
+      "Complete full stack application",
+      "API endpoints",
+      "Database schema",
+      "Source code",
+      "Deployment setup",
+      "Documentation"
+    ],
+    process: [
+      "Requirement gathering",
+      "Application architecture",
+      "Backend development",
+      "Frontend integration",
+      "Testing & optimization",
+      "Deployment"
+    ],
+    timeline: "3-8 weeks depending on complexity",
+    included: [
+      "Backend architecture",
+      "Database setup",
+      "API development",
+      "Frontend integration",
+      "Deployment support",
+      "Documentation"
+    ],
+  },
+  {
+    id: 2,
     title: "Frontend Development",
     category: "frontend",
     icon: FiGlobe,
@@ -62,58 +121,6 @@ export const services = [
       "Cross-browser testing",
       "Documentation",
       "Deployment support",
-    ],
-  },
-  {
-    id: 2,
-    title: "Full Stack / Backend Development",
-    category: "backend",
-    icon: FiServer,
-    color: "#8b5cf6",
-    price: "Negotiable",
-    duration: "Coming Soon",
-    rating: 0,
-    description:
-      "Currently expanding into backend development and full stack applications. Soon, I’ll be delivering scalable, data-driven web solutions integrating frontend and backend seamlessly.",
-    shortDescription:
-      "Full stack applications and backend development coming soon.",
-    features: [
-      "Node.js / Express backend development",
-      "REST API integration",
-      "Database design (MongoDB / MySQL)",
-      "Authentication & authorization",
-      "Server-side logic",
-      "Deployment & hosting solutions",
-    ],
-    technologies: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "MySQL",
-      "REST APIs",
-      "Docker (in progress)",
-    ],
-    deliverables: [
-      "Backend application (in progress)",
-      "API endpoints",
-      "Database schema",
-      "Source code",
-      "Documentation",
-    ],
-    process: [
-      "Planning & architecture",
-      "Database design",
-      "API development",
-      "Integration with frontend",
-      "Testing & optimization",
-    ],
-    timeline: "Coming Soon",
-    included: [
-      "Backend architecture planning",
-      "API development",
-      "Database setup",
-      "Deployment support",
-      "Documentation",
     ],
   }
 ];

@@ -18,6 +18,8 @@ import '../../styles/components/Hero.css';
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
+  const [typedText, setTypedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef(null);
   const navigate = useNavigate();
@@ -59,12 +61,6 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
 
-    // Role rotation
-    const roleInterval = setInterval(() => {
-      setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 3000);
-
-    // Mouse tracking for parallax
     const handleMouseMove = (e) => {
       if (heroRef.current) {
         const rect = heroRef.current.getBoundingClientRect();
@@ -76,16 +72,47 @@ const Hero = () => {
 
     const heroElement = heroRef.current;
     if (heroElement) {
-      heroElement.addEventListener('mousemove', handleMouseMove);
+      heroElement.addEventListener("mousemove", handleMouseMove);
     }
 
     return () => {
-      clearInterval(roleInterval);
       if (heroElement) {
-        heroElement.removeEventListener('mousemove', handleMouseMove);
+        heroElement.removeEventListener("mousemove", handleMouseMove);
       }
     };
-  }, [roles.length]);
+  }, []);
+
+      // Role rotation
+  useEffect(() => {
+    const currentWord = roles[currentRole];
+
+    let timeout;
+
+    if (!isDeleting && typedText !== currentWord) {
+      timeout = setTimeout(() => {
+        setTypedText(currentWord.slice(0, typedText.length + 1));
+      }, 100);
+    }
+
+    else if (!isDeleting && typedText === currentWord) {
+      timeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, 1200);
+    }
+
+    else if (isDeleting && typedText !== "") {
+      timeout = setTimeout(() => {
+        setTypedText(currentWord.slice(0, typedText.length - 1));
+      }, 50);
+    }
+
+    else if (isDeleting && typedText === "") {
+      setIsDeleting(false);
+      setCurrentRole((prev) => (prev + 1) % roles.length);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [typedText, isDeleting, currentRole, roles]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -192,8 +219,8 @@ const Hero = () => {
               
               <div className="hero__role">
                 <span className="hero__role-prefix">I'm a </span>
-                <span className="hero__role-text" key={currentRole}>
-                  {roles[currentRole]}
+                <span className="hero__role-text">
+                  {typedText}
                 </span>
                 <span className="hero__role-cursor">|</span>
               </div>

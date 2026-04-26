@@ -1,6 +1,62 @@
 export const projects = [
   {
     id: 1,
+    title: "TaskFlow",
+    category: "fullstack",
+    featured: true,
+    image: "/project-images/TaskFlow.png",
+    description:
+      "A full-stack task management application built with the MERN stack that allows users to create, organize, and manage daily tasks through a modern and responsive interface. The application includes secure authentication, profile management, task categorization, and cloud-based profile image uploads, providing a practical real-world productivity solution.",
+    shortDescription:
+      "A MERN task management app with authentication, profile updates, and cloud image uploads.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary"
+    ],
+    github: "https://github.com/BensonTochukwu/TaskFlow-MERN-Project",
+    demo: "https://taskflow-ng.vercel.app",
+    status: "Completed",
+    year: "2026",
+    duration: "2-4 weeks",
+    team: "Solo Project",
+    client: "Personal Project",
+    rating: 4.9,
+    features: [
+      "User authentication and protected routes",
+      "Create, update, and delete tasks",
+      "Task completion tracking",
+      "Profile editing with image upload",
+      "Cloudinary profile image storage",
+      "Redux state management",
+      "Responsive dashboard UI",
+      "Persistent MongoDB data storage"
+    ],
+    challenges: [
+      "Handling secure user authentication",
+      "Managing global state across multiple components",
+      "Integrating image uploads with Cloudinary",
+      "Fixing CORS and deployment-related issues",
+      "Synchronizing frontend state with backend updates"
+    ],
+    results: [
+      "Built a production-style full-stack application",
+      "Improved understanding of MERN architecture",
+      "Strengthened debugging and deployment skills",
+      "Demonstrates practical backend integration experience"
+    ],
+    testimonial: {
+      text: "A full-stack productivity application that demonstrates practical MERN development and real-world problem solving.",
+      author: "Personal Project",
+      role: "Full Stack Developer"
+    }
+  },
+  {
+    id: 2,
     title: "Aku Group Engineering Services",
     category: "frontend",
     featured: true,
@@ -45,10 +101,10 @@ export const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "Personal Portfolio",
     category: "frontend",
-    featured: true,
+    featured: false,
     image: "/project-images/Portfolio.png",
     description:
       "A modern personal portfolio website built to showcase my projects, skills, and services. Designed with a focus on clean UI, responsiveness, and smooth user experience, it reflects my approach to frontend development and growing full stack capabilities.",
@@ -91,7 +147,7 @@ export const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "CraveHub",
     category: "frontend",
     featured: false,
@@ -134,7 +190,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Bookly",
     category: "frontend",
     featured: false,
@@ -176,7 +232,7 @@ export const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Busway",
     category: "frontend",
     featured: false,
@@ -218,7 +274,7 @@ export const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Sofora",
     category: "frontend",
     featured: false,

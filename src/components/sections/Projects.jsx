@@ -29,8 +29,8 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const projectCategories = [
-    { id: "all", label: "All Projects", count: 9 },
-    { id: "frontend", label: "Frontend", count: 8 },
+    { id: "all", label: "All Projects", count: 8},
+    { id: "frontend", label: "Frontend", count: 6 },
     { id: "fullstack", label: "Full-Stack", count: 1 },
     { id: "backend", label: "Backend/API", count: 1 },
   ];
@@ -40,7 +40,7 @@ const Projects = () => {
     { number: "2", label: "Featured Projects", icon: FiCode },
     { number: "100%", label: "Completion Rate", icon: FiCheck },
     // { number: "5.0", label: "Average Rating", icon: FiStar },
-    { number: "6", label: "Total Projects", icon: FiTrendingUp },
+    { number: "7", label: "Total Projects", icon: FiTrendingUp },
   ];
 
   useEffect(() => {
