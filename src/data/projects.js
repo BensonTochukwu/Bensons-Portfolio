@@ -10,12 +10,12 @@ export const projects = [
     shortDescription:
       "A MERN task management app with authentication, profile updates, and cloud image uploads.",
     technologies: [
-      "React",
-      "Redux Toolkit",
-      "Tailwind CSS",
       "Node.js",
       "Express.js",
       "MongoDB",
+      "React",
+      "Redux Toolkit",
+      "Tailwind CSS",
       "Cloudinary"
     ],
     github: "https://github.com/BensonTochukwu/TaskFlow-MERN-Project",
@@ -57,6 +57,72 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Vaulta",
+    category: "frontend",
+    featured: true,
+    image: "/project-images/vaulta.png",
+    description:
+      "A modern digital agency website designed for Vaulta to showcase high-converting web design and paid advertising services. The platform was built with React and custom CSS to create a polished, responsive experience featuring animated hero particles, horizontal project sliders, video integration, floating WhatsApp contact, client testimonials, and a conversion-focused contact section tailored for lead generation.",
+
+    shortDescription:
+      "A premium React agency website built to convert visitors into leads through modern UI and responsive design.",
+
+    technologies: [
+      "React",
+      "JavaScript",
+      "CSS3",
+      "Responsive Design",
+      "Ionicons"
+    ],
+
+    github: "https://github.com/BensonTochukwu/vaulta",
+    demo: "https://vaulta.ng",
+
+    status: "Completed",
+    year: "2026",
+    duration: "1-2 weeks",
+    team: "Solo Project",
+    client: "Vaulta",
+
+    rating: 4.9,
+
+    features: [
+      "Responsive mobile-first design",
+      "Animated floating hero particles",
+      "Auto-scrolling project showcase",
+      "Video-enabled about section",
+      "WhatsApp floating contact button",
+      "Client testimonial slider",
+      "Modern service cards",
+      "Split contact layout",
+      "Custom branding integration",
+      "Smooth scrolling navigation"
+    ],
+
+    challenges: [
+      "Creating a premium agency-style UI without using a framework",
+      "Balancing animation with performance",
+      "Building a responsive horizontal project slider",
+      "Integrating floating UI elements cleanly",
+      "Maintaining design consistency across all sections"
+    ],
+
+    results: [
+      "Created a conversion-focused business website",
+      "Improved frontend animation skills",
+      "Strengthened responsive design techniques",
+      "Demonstrates premium client-ready frontend work",
+      "Built a professional lead-generation interface"
+    ],
+
+    testimonial: {
+      text: "A polished digital agency website that combines branding, responsiveness, and conversion-focused design into a professional client-ready experience.",
+      author: "Personal Project",
+      role: "Frontend Developer"
+    }
+  },
+  {
+    id: 3,
     title: "Aku Group Engineering Services",
     category: "frontend",
     featured: true,
@@ -101,7 +167,7 @@ export const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "Personal Portfolio",
     category: "frontend",
     featured: false,
@@ -147,7 +213,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "CraveHub",
     category: "frontend",
     featured: false,
@@ -190,7 +256,7 @@ export const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Bookly",
     category: "frontend",
     featured: false,
@@ -232,7 +298,7 @@ export const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Busway",
     category: "frontend",
     featured: false,
@@ -274,7 +340,7 @@ export const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Sofora",
     category: "frontend",
     featured: false,

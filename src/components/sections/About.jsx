@@ -22,30 +22,30 @@ const About = () => {
   const highlights = [
     {
       icon: FiIcons.FiCode,
-      title: "Clean & Structured Code",
+      title: "Engineering-Grade Code",
       description:
-        "I focus on writing readable, well-structured code that is easy to maintain and scale.",
+        "I write clean, scalable, and maintainable code with strong architectural thinking and best practices.",
       color: "#6366f1",
     },
     {
       icon: FiIcons.FiLayout,
-      title: "Frontend Craftsmanship",
+      title: "Modern Frontend Development",
       description:
-        "I build responsive and intuitive user interfaces with attention to detail and usability.",
+        "I build performant, responsive, and accessible user interfaces with a focus on UX and real-world usability.",
       color: "#8b5cf6",
     },
     {
-      icon: FiIcons.FiTrendingUp,
-      title: "Full Stack Skills",
+      icon: FiIcons.FiServer,
+      title: "Full Stack Development",
       description:
-        "Actively expanding into backend development to build complete, end-to-end applications.",
+        "I develop end-to-end applications, working across frontend, backend, and APIs to deliver complete solutions.",
       color: "#06b6d4",
     },
     {
       icon: FiIcons.FiTool,
-      title: "Practical Problem Solving",
+      title: "System-Level Problem Solving",
       description:
-        "I enjoy breaking down complex problems and building efficient, real-world solutions.",
+        "I approach problems with a product and systems mindset, designing efficient and scalable solutions.",
       color: "#10b981",
     },
   ];
@@ -62,11 +62,11 @@ const About = () => {
       title: "Full Stack Developer",
       company: "Personal Projects",
       description:
-        "Currently expanding into backend development using Node.js while continuing to build modern frontend applications with React.",
+        "Transitioned into full stack development, building complete web applications from frontend interfaces to backend systems and APIs.",
       achievements: [
-        "Learning Node.js and Express for backend development",
-        "Building full stack projects integrating frontend and backend",
-        "Strengthening understanding of APIs and server-side logic",
+        "Built full stack applications using React with Node.js/Express backends",
+        "Designed and integrated REST APIs for real-world applications",
+        "Developed end-to-end features covering UI, server logic, and database interactions",
       ],
     },
     {

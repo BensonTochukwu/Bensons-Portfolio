@@ -59,7 +59,7 @@ export const skillsData = {
     },
     {
       name: "React",
-      level: 80,
+      level: 90,
       icon: "⚛️",
       description: "Building dynamic UIs with components, hooks, and state management",
       experience: "1+ years",
@@ -67,7 +67,7 @@ export const skillsData = {
     },
     {
       name: "Tailwind CSS",
-      level: 80,
+      level: 90,
       icon: "💨",
       description: "Utility-first CSS framework for rapid development",
       experience: "1+ years",
@@ -85,7 +85,7 @@ export const skillsData = {
   backend: [
     {
       name: "Node.js",
-      level: 75,
+      level: 80,
       icon: "🟢",
       description: "Building backend services and REST APIs with Express",
       experience: "2 months",
@@ -93,7 +93,7 @@ export const skillsData = {
     },
     {
       name: "Express",
-      level: 75,
+      level: 80,
       icon: "🚂",
       description: "Creating APIs and handling server-side logic",
       experience: "2 months",
@@ -119,7 +119,7 @@ export const skillsData = {
     },
     {
       name: "MongoDB",
-      level: 75,
+      level: 90,
       icon: "🍃",
       description: "Document-based NoSQL database operations",
       experience: "2+ years",
@@ -129,7 +129,7 @@ export const skillsData = {
   tools: [
     {
       name: "Git",
-      level: 85,
+      level: 90,
       icon: "🐙",
       description: "Version control and collaboration workflows",
       experience: "2+ years",
@@ -145,7 +145,7 @@ export const skillsData = {
     },
     {
       name: "Firebase",
-      level: 75,
+      level: 80,
       icon: "🔥",
       description: "Real-time database and authentication services",
       experience: "1+ years",
