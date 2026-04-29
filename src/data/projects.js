@@ -57,6 +57,73 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Velmora(In progress)",
+    category: "fullstack",
+    featured: false,
+    image: "/project-images/velmora.png",
+    description:
+      "A full-stack ecommerce platform currently in development, built with the MERN stack to deliver a modern online shopping experience. The application allows users to browse products, manage carts, place secure orders, and complete payments through Paystack. Cloudinary is integrated for product image storage, while the backend handles authentication, order management, and scalable product administration.",
+
+    shortDescription:
+      "A secure MERN ecommerce platform featuring role-based authentication, protected admin access, and scalable backend architecture for modern online shopping.",
+
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Paystack"
+    ],
+
+    github: "https://github.com/BensonTochukwu/velmora",
+    demo: "https://github.com/BensonTochukwu/velmora",
+
+    status: "In Progress",
+    year: "2026",
+    duration: "Ongoing",
+    team: "Solo Project",
+    client: "Personal Project",
+
+    rating: 4.8,
+
+    features: [
+      "User authentication and authorization",
+      "Dynamic product catalog",
+      "Shopping cart functionality",
+      "Secure Paystack payment integration",
+      "Cloudinary product image uploads",
+      "Admin product management dashboard",
+      "Order tracking system",
+      "Responsive mobile-friendly UI"
+    ],
+
+    challenges: [
+      "Integrating secure Paystack payment workflows",
+      "Managing product images with Cloudinary",
+      "Synchronizing frontend and backend state",
+      "Designing scalable database models",
+      "Handling protected admin routes"
+    ],
+
+    results: [
+      "Expanding full-stack development skills",
+      "Improving payment gateway integration knowledge",
+      "Strengthening backend API architecture",
+      "Building a production-style ecommerce platform",
+      "Demonstrating real-world MERN application structure"
+    ],
+
+    testimonial: {
+      text: "A growing ecommerce platform that demonstrates practical full-stack development, payment integration, and scalable architecture.",
+      author: "Personal Project",
+      role: "Full Stack Developer"
+    }
+  },
+  {
+    id: 3,
     title: "Vaulta",
     category: "frontend",
     featured: true,
@@ -122,7 +189,7 @@ export const projects = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "Aku Group Engineering Services",
     category: "frontend",
     featured: true,
@@ -167,7 +234,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Personal Portfolio",
     category: "frontend",
     featured: false,
@@ -213,7 +280,7 @@ export const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Growvia",
     category: "frontend",
     featured: false,
@@ -277,7 +344,7 @@ export const projects = [
     }
   },
   {
-    id: 6,
+    id: 7,
     title: "CraveHub",
     category: "frontend",
     featured: false,
@@ -320,7 +387,7 @@ export const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Bookly",
     category: "frontend",
     featured: false,
@@ -362,7 +429,7 @@ export const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Busway",
     category: "frontend",
     featured: false,
@@ -404,7 +471,7 @@ export const projects = [
     },
   },
   {
-    id: 9,
+    id: 10,
     title: "Sofora",
     category: "frontend",
     featured: false,
