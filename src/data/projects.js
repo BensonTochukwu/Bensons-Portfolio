@@ -300,7 +300,7 @@ export const projects = [
     ],
 
     github: "https://github.com/BensonTochukwu/growvia",
-    demo: "https://growvia.vercel.app",
+    demo: "https://growvia-ng.netlify.app",
 
     status: "Completed",
     year: "2026",
