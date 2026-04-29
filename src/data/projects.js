@@ -214,6 +214,70 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Growvia",
+    category: "frontend",
+    featured: false,
+    image: "/project-images/growvia.png",
+    description:
+      "A modern SEO and business growth agency website built to help brands showcase search optimization, content strategy, and online visibility services. Developed with React and Tailwind CSS, the platform delivers a clean, responsive experience with engaging layouts, service highlights, trust sections, and conversion-focused call-to-actions designed to turn visitors into potential clients.",
+
+    shortDescription:
+      "A modern SEO agency website built with React and Tailwind CSS for lead generation and brand growth.",
+
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Framer Motion"
+    ],
+
+    github: "https://github.com/BensonTochukwu/growvia",
+    demo: "https://growvia.vercel.app",
+
+    status: "Completed",
+    year: "2026",
+    duration: "1-2 weeks",
+    team: "Solo Project",
+    client: "Personal Project",
+
+    rating: 4.9,
+
+    features: [
+      "Modern responsive layout",
+      "SEO service showcase sections",
+      "Animated hero section",
+      "Trust-building statistics display",
+      "Smooth scrolling navigation",
+      "Conversion-focused CTA sections",
+      "Mobile-first design",
+      "Optimized performance"
+    ],
+
+    challenges: [
+      "Creating a distinct agency identity separate from previous projects",
+      "Balancing modern design with readability",
+      "Maintaining consistent spacing across sections",
+      "Improving responsiveness on smaller devices",
+      "Structuring content for higher conversion"
+    ],
+
+    results: [
+      "Built a professional SEO agency website",
+      "Improved Tailwind CSS workflow",
+      "Strengthened React component structure",
+      "Enhanced responsive UI design skills",
+      "Added another client-style project to portfolio"
+    ],
+
+    testimonial: {
+      text: "A polished agency website that combines modern design, responsiveness, and conversion-driven structure for a professional business presence.",
+      author: "Personal Project",
+      role: "Frontend Developer"
+    }
+  },
+  {
+    id: 6,
     title: "CraveHub",
     category: "frontend",
     featured: false,
@@ -256,7 +320,7 @@ export const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Bookly",
     category: "frontend",
     featured: false,
@@ -298,7 +362,7 @@ export const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Busway",
     category: "frontend",
     featured: false,
@@ -340,7 +404,7 @@ export const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Sofora",
     category: "frontend",
     featured: false,
