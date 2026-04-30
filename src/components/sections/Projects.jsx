@@ -29,18 +29,18 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const projectCategories = [
-    { id: "all", label: "All Projects", count: 11},
+    { id: "all", label: "All Projects", count: 12},
     { id: "frontend", label: "Frontend", count: 8 },
-    { id: "fullstack", label: "Full-Stack", count: 2 },
+    { id: "fullstack", label: "Full-Stack", count: 3 },
     { id: "backend", label: "Backend/API", count: 1 },
   ];
 
 
   const stats = [
-    { number: "3", label: "Featured Projects", icon: FiCode },
+    { number: "4", label: "Featured Projects", icon: FiCode },
     { number: "100%", label: "Completion Rate", icon: FiCheck },
     // { number: "5.0", label: "Average Rating", icon: FiStar },
-    { number: "10", label: "Total Projects", icon: FiTrendingUp },
+    { number: "11", label: "Total Projects", icon: FiTrendingUp },
   ];
 
   useEffect(() => {

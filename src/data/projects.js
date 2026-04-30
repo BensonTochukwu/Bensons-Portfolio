@@ -8,7 +8,7 @@ export const projects = [
     description:
       "A full-stack task management application built with the MERN stack that allows users to create, organize, and manage daily tasks through a modern and responsive interface. The application includes secure authentication, profile management, task categorization, and cloud-based profile image uploads, providing a practical real-world productivity solution.",
     shortDescription:
-      "A MERN task management app with authentication, profile updates, and cloud image uploads.",
+      "A full-stack task management app with authentication, profile updates, and cloud image uploads.",
     technologies: [
       "Node.js",
       "Express.js",
@@ -57,67 +57,69 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Velmora(In progress)",
+    title: "NextHire",
     category: "fullstack",
-    featured: false,
-    image: "/project-images/velmora.png",
+    featured: true,
+    image: "/project-images/NextHire.png",
     description:
-      "A full-stack ecommerce platform currently in development, built with the MERN stack to deliver a modern online shopping experience. The application allows users to browse products, manage carts, place secure orders, and complete payments through Paystack. Cloudinary is integrated for product image storage, while the backend handles authentication, order management, and scalable product administration.",
-
+      "NextHire is a full-stack job portal platform built with the MERN stack that connects recruiters and job seekers. Recruiters can post and manage job listings, while users can browse jobs, apply, and upload resumes. The platform features secure authentication, role-based access control, and cloud-based file handling for resumes and profile images, delivering a complete real-world hiring system.",
     shortDescription:
-      "A secure MERN ecommerce platform featuring role-based authentication, protected admin access, and scalable backend architecture for modern online shopping.",
+      "A full-stack job portal with recruiter dashboards, job applications, authentication, and resume uploads.",
 
     technologies: [
-      "MongoDB",
-      "Express.js",
-      "React",
       "Node.js",
-      "Redux Toolkit",
+      "Express.js",
+      "MongoDB",
+      "React",
       "Tailwind CSS",
+      "Clerk Authentication",
       "Cloudinary",
-      "Paystack"
+      "Render",
+      "Vercel"
     ],
 
-    github: "https://github.com/BensonTochukwu/velmora",
-    demo: "https://github.com/BensonTochukwu/velmora",
+    github: "https://github.com/BensonTochukwu/NextHire",
+    demo: "https://next-hire-ng.vercel.app/",
 
-    status: "In Progress",
+    status: "Completed",
     year: "2026",
-    duration: "Ongoing",
+    duration: "3-5 weeks",
     team: "Solo Project",
     client: "Personal Project",
 
-    rating: 4.8,
+    rating: 4.9,
 
     features: [
-      "User authentication and authorization",
-      "Dynamic product catalog",
-      "Shopping cart functionality",
-      "Secure Paystack payment integration",
-      "Cloudinary product image uploads",
-      "Admin product management dashboard",
-      "Order tracking system",
-      "Responsive mobile-friendly UI"
+      "Role-based authentication (Recruiter & Job Seeker)",
+      "Recruiter dashboard for posting and managing jobs",
+      "Job browsing and application system",
+      "Resume upload and Cloudinary integration",
+      "Secure Clerk authentication system",
+      "Protected routes and middleware authorization",
+      "Responsive UI with Tailwind CSS",
+      "Real-time user sync with MongoDB via webhooks"
     ],
 
     challenges: [
-      "Integrating secure Paystack payment workflows",
-      "Managing product images with Cloudinary",
-      "Synchronizing frontend and backend state",
-      "Designing scalable database models",
-      "Handling protected admin routes"
+      "Integrating Clerk authentication with custom backend database",
+      "Handling webhook verification with Svix",
+      "Deploying backend and frontend on separate platforms",
+      "Fixing CORS and production environment issues",
+      "Managing file uploads and Cloudinary resume storage",
+      "Synchronizing user data between Clerk and MongoDB"
     ],
 
     results: [
-      "Expanding full-stack development skills",
-      "Improving payment gateway integration knowledge",
-      "Strengthening backend API architecture",
-      "Building a production-style ecommerce platform",
-      "Demonstrating real-world MERN application structure"
+      "Built a production-ready job portal system",
+      "Implemented secure authentication and role-based access",
+      "Successfully deployed full-stack app on Vercel and Render",
+      "Improved understanding of webhooks and backend integration",
+      "Strengthened real-world deployment and debugging skills"
     ],
 
     testimonial: {
-      text: "A growing ecommerce platform that demonstrates practical full-stack development, payment integration, and scalable architecture.",
+      text:
+        "A complete full-stack hiring platform demonstrating authentication, backend integration, and production deployment skills.",
       author: "Personal Project",
       role: "Full Stack Developer"
     }
@@ -281,6 +283,73 @@ export const projects = [
   },
   {
     id: 6,
+    title: "Velmora(In progress)",
+    category: "fullstack",
+    featured: false,
+    image: "/project-images/velmora.png",
+    description:
+      "A full-stack ecommerce platform currently in development, built with the MERN stack to deliver a modern online shopping experience. The application allows users to browse products, manage carts, place secure orders, and complete payments through Paystack. Cloudinary is integrated for product image storage, while the backend handles authentication, order management, and scalable product administration.",
+
+    shortDescription:
+      "A secure MERN ecommerce platform featuring role-based authentication, protected admin access, and scalable backend architecture for modern online shopping.",
+
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Paystack"
+    ],
+
+    github: "https://github.com/BensonTochukwu/velmora",
+    demo: "https://github.com/BensonTochukwu/velmora",
+
+    status: "In Progress",
+    year: "2026",
+    duration: "Ongoing",
+    team: "Solo Project",
+    client: "Personal Project",
+
+    rating: 4.8,
+
+    features: [
+      "User authentication and authorization",
+      "Dynamic product catalog",
+      "Shopping cart functionality",
+      "Secure Paystack payment integration",
+      "Cloudinary product image uploads",
+      "Admin product management dashboard",
+      "Order tracking system",
+      "Responsive mobile-friendly UI"
+    ],
+
+    challenges: [
+      "Integrating secure Paystack payment workflows",
+      "Managing product images with Cloudinary",
+      "Synchronizing frontend and backend state",
+      "Designing scalable database models",
+      "Handling protected admin routes"
+    ],
+
+    results: [
+      "Expanding full-stack development skills",
+      "Improving payment gateway integration knowledge",
+      "Strengthening backend API architecture",
+      "Building a production-style ecommerce platform",
+      "Demonstrating real-world MERN application structure"
+    ],
+
+    testimonial: {
+      text: "A growing ecommerce platform that demonstrates practical full-stack development, payment integration, and scalable architecture.",
+      author: "Personal Project",
+      role: "Full Stack Developer"
+    }
+  },
+  {
+    id: 7,
     title: "Growvia",
     category: "frontend",
     featured: false,
@@ -344,7 +413,7 @@ export const projects = [
     }
   },
   {
-    id: 7,
+    id: 8,
     title: "CraveHub",
     category: "frontend",
     featured: false,
@@ -387,7 +456,7 @@ export const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Bookly",
     category: "frontend",
     featured: false,
@@ -429,7 +498,7 @@ export const projects = [
     },
   },
   {
-    id: 9,
+    id: 10,
     title: "Busway",
     category: "frontend",
     featured: false,
@@ -471,7 +540,7 @@ export const projects = [
     },
   },
   {
-    id: 10,
+    id: 11,
     title: "Sofora",
     category: "frontend",
     featured: false,
