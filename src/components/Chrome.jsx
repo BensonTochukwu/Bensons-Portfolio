@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FiArrowUpRight, FiGithub, FiLinkedin, FiMenu, FiX, FiPause, FiPlay } from 'react-icons/fi'
 
+import Flower from './Flower'
+
 const links = [['Work', '/#work'], ['Vaulta', '/#vaulta'], ['About', '/#about']]
 
 export function Navbar() {
@@ -35,7 +37,7 @@ export function Navbar() {
     <div className="scroll-progress" aria-hidden="true" />
     <header className={`site-header ${location.pathname === '/' ? 'header-home' : ''} ${open ? 'menu-open' : ''}`}>
       <div className="nav-shell">
-        <Link to="/" className="wordmark" onClick={close} aria-label="Benson, homepage">tb<span>✳</span></Link>
+        <Link to="/" className="wordmark" onClick={close} aria-label="Benson, homepage">tb<Flower /></Link>
         <span className="nav-location">LAGOS, NG <span className="location-dot" /></span>
         <button className="menu-toggle icon-button" ref={toggle} aria-expanded={open} aria-controls="primary-nav" aria-label={open ? 'Close navigation' : 'Open navigation'} onClick={() => setOpen(!open)}>{open ? <FiX /> : <FiMenu />}</button>
         <nav id="primary-nav" ref={nav} className={open ? 'primary-nav is-open' : 'primary-nav'} aria-label="Main navigation">
@@ -50,7 +52,7 @@ export function Navbar() {
 
 export function Footer() {
   return <footer className="site-footer container">
-    <div><Link to="/" className="wordmark">tb<span>✳</span></Link><p>Built with intention. Always evolving.</p></div>
+    <div><Link to="/" className="wordmark">tb<Flower /></Link><p>Built with intention. Always evolving.</p></div>
     <div className="footer-links"><a href="https://github.com/BensonTochukwu" target="_blank" rel="noreferrer"><FiGithub /> GitHub</a><a href="https://www.linkedin.com/in/tochukwu-teco-benson/" target="_blank" rel="noreferrer"><FiLinkedin /> LinkedIn</a><a href="/Tochukwu-Teco-Benson-CV.pdf" target="_blank" rel="noreferrer">View CV <FiArrowUpRight /></a></div>
     <div className="footer-meta"><span>© {new Date().getFullYear()} Tochukwu Teco-Benson</span><a href="#main">Back to top ↑</a></div>
   </footer>

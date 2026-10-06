@@ -18,6 +18,11 @@
   --serif: 'Instrument Serif', Georgia, serif;
 }
 * { box-sizing: border-box; }
+/* One vector mark across all devices, inheriting each section's colour and size. */
+.flower-mark { display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; height:1em; line-height:1; vertical-align:middle; }
+.flower-mark .brand-flower { display:block; width:1em; height:1em; flex-shrink:0; }
+.hero-marquee .flower-mark { font-size:inherit; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 body { margin: 0; min-width: 320px; }
 ::selection { background: #b6a0f4; color: #131216; }
@@ -585,7 +590,7 @@ body { overflow-x: clip; }
 .capability-orb i { position:absolute; inset:0; border:1px solid #b7a4ff8b; border-radius:50%; box-shadow:0 0 25px #b7a4ff08; }
 .capability-orb i:nth-child(2) { transform:rotateX(67deg) rotateY(30deg); }
 .capability-orb i:nth-child(3) { transform:rotateY(65deg) rotateX(20deg); }
-.capability-orb::before { content:'✳'; position:absolute; inset:0; display:grid; place-items:center; font-size:100px; color:var(--accent); animation:star-turn 20s linear infinite; }
+.capability-flower { position:absolute; inset:0; height:auto; display:grid; place-items:center; font-size:100px; color:var(--accent); animation:star-turn 20s linear infinite; }
 .orb-mode-1 { transform:rotate(70deg) scale(.92); }
 .orb-mode-2 { transform:rotate(150deg) scale(1.05); }
 .orb-mode-3 { transform:rotate(220deg) scale(.95); }
@@ -897,7 +902,7 @@ body { overflow-x: clip; }
   .capabilities-layout { grid-template-columns:1fr; gap:30px; }
   .capability-visual { height:225px; }
   .capability-orb { width:160px; height:160px; }
-  .capability-orb::before { font-size:75px; }
+  .capability-flower { font-size:75px; }
   .capability-row>button { gap:17px; padding-block:25px; }
   .capability-row h3 { font-size:17px; letter-spacing:-.4px; }
   .capability-row>button>span { font-size: 11px; }
