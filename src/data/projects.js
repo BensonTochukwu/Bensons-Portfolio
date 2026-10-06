@@ -1,584 +1,97 @@
 export const projects = [
   {
-    id: 1,
-    title: "TaskFlow",
-    category: "fullstack",
-    featured: true,
-    image: "/project-images/TaskFlow.png",
-    description:
-      "A full-stack task management application built with the MERN stack that allows users to create, organize, and manage daily tasks through a modern and responsive interface. The application includes secure authentication, profile management, task categorization, and cloud-based profile image uploads, providing a practical real-world productivity solution.",
-    shortDescription:
-      "A full-stack task management app with authentication, profile updates, and cloud image uploads.",
-    technologies: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "React",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Cloudinary"
-    ],
-    github: "https://github.com/BensonTochukwu/TaskFlow-MERN-Project",
-    demo: "https://taskflow-ng.vercel.app",
-    status: "Completed",
-    year: "2026",
-    duration: "2-4 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.9,
+    slug: 'vaulta-workspace', name: 'Vaulta Workspace', number: '01',
+    category: 'Operations', color: '#ff668e', image: '/work/vaulta-workspace.webp',
+    imageAlt: 'Vaulta Workspace dashboard with assigned tasks, creative reviews and team navigation',
+    status: 'In use by the Vaulta team', role: 'Sole full-stack developer',
+    headline: 'The workspace behind our work.',
+    summary: 'One home for client projects, assigned tasks, content calendars and creative reviews. Built by me. Used by our team.',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL'],
+    tags: ['Authentication', 'Role-based access', 'Client portal', 'File storage'],
+    url: 'https://workspace.vaulta.ng/', urlLabel: 'Visit workspace',
+    context: 'Running a creative and technology agency means coordinating people, deliverables and client feedback. I built Vaulta Workspace to bring those day-to-day operations together, with a separate portal for clients.',
+    contribution: 'I designed and built the entire application independently, from the dashboard and client portal to authentication, database management and storage integrations. It is working and used by the Vaulta team.',
     features: [
-      "User authentication and protected routes",
-      "Create, update, and delete tasks",
-      "Task completion tracking",
-      "Profile editing with image upload",
-      "Cloudinary profile image storage",
-      "Redux state management",
-      "Responsive dashboard UI",
-      "Persistent MongoDB data storage"
+      ['A shared operational picture', 'Client projects, assigned tasks, content calendars and creative reviews sit in one dashboard.'],
+      ['Access that follows responsibility', 'Invitation-based authentication and server-enforced role-based access control who can see and manage work.'],
+      ['A separate client experience', 'A dedicated client portal connects the external review experience to the agency’s internal workflow.'],
+      ['Files with a history', 'Secure file storage and version history support creative delivery, while PostgreSQL holds the underlying operational records.'],
     ],
-    challenges: [
-      "Handling secure user authentication",
-      "Managing global state across multiple components",
-      "Integrating image uploads with Cloudinary",
-      "Fixing CORS and deployment-related issues",
-      "Synchronizing frontend state with backend updates"
-    ],
-    results: [
-      "Built a production-style full-stack application",
-      "Improved understanding of MERN architecture",
-      "Strengthened debugging and deployment skills",
-      "Demonstrates practical backend integration experience"
-    ],
-    testimonial: {
-      text: "A full-stack productivity application that demonstrates practical MERN development and real-world problem solving.",
-      author: "Personal Project",
-      role: "Full Stack Developer"
-    }
+    technical: 'Next.js and TypeScript power the application. Supabase provides authentication, PostgreSQL database management and storage, integrated through its Auth, database and storage APIs.',
+    outcome: 'A functioning internal product that supports our team’s daily work. It also reflects how I think as a founder: identify an operational need, build the system and use it in the business.',
+    proof: 'Built independently · Used internally',
   },
   {
-    id: 2,
-    title: "NextHire",
-    category: "fullstack",
-    featured: true,
-    image: "/project-images/NextHire.png",
-    description:
-      "NextHire is a full-stack job portal platform built with the MERN stack that connects recruiters and job seekers. Recruiters can post and manage job listings, while users can browse jobs, apply, and upload resumes. The platform features secure authentication, role-based access control, and cloud-based file handling for resumes and profile images, delivering a complete real-world hiring system.",
-    shortDescription:
-      "A full-stack job portal with recruiter dashboards, job applications, authentication, and resume uploads.",
-
-    technologies: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "React",
-      "Tailwind CSS",
-      "Clerk Authentication",
-      "Cloudinary",
-      "Render",
-      "Vercel"
-    ],
-
-    github: "https://github.com/BensonTochukwu/NextHire",
-    demo: "https://next-hire-ng.vercel.app/",
-
-    status: "Completed",
-    year: "2026",
-    duration: "3-5 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-
-    rating: 4.9,
-
+    slug: 'babcock-operations', name: 'Babcock Operations', number: '02',
+    category: 'Operations', color: '#9bcfa0', image: '/work/babcock-operations.webp',
+    imageAlt: 'Babcock University business operations dashboard with requisitions, approvals and operational reports',
+    status: 'Functional · Final stakeholder review', role: 'Sole engineer in a two-person project team',
+    headline: 'Seven business units. One operational system.',
+    summary: 'A centralized platform for requisitions, procurement, inventory and production planning across Babcock University business units.',
+    stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    tags: ['Permissions', 'Approval workflows', 'Audit logs', 'Database management'],
+    url: 'https://babcock-operations.vercel.app/', urlLabel: 'View current demo',
+    context: 'The platform brings the operational workflows of seven Babcock University business units into a shared system. Different users need different permissions, and requests need a clear route through review and approval.',
+    contribution: 'I am the sole software engineer in a two-person project team. I built the functional application and iterated on stakeholder requirements through several client demos. The platform is awaiting final review with the client’s colleagues.',
     features: [
-      "Role-based authentication (Recruiter & Job Seeker)",
-      "Recruiter dashboard for posting and managing jobs",
-      "Job browsing and application system",
-      "Resume upload and Cloudinary integration",
-      "Secure Clerk authentication system",
-      "Protected routes and middleware authorization",
-      "Responsive UI with Tailwind CSS",
-      "Real-time user sync with MongoDB via webhooks"
+      ['Connected business workflows', 'Requisitions, procurement, inventory, replenishment and production planning are managed in the same platform.'],
+      ['Authentication and permissions', 'Authenticated users work within the permissions assigned to their role.'],
+      ['Structured approvals', 'Approval workflows give operational requests a defined review and decision process.'],
+      ['Traceable activity', 'Audit logs record activity so stakeholders can follow what happened within the system.'],
     ],
-
-    challenges: [
-      "Integrating Clerk authentication with custom backend database",
-      "Handling webhook verification with Svix",
-      "Deploying backend and frontend on separate platforms",
-      "Fixing CORS and production environment issues",
-      "Managing file uploads and Cloudinary resume storage",
-      "Synchronizing user data between Clerk and MongoDB"
-    ],
-
-    results: [
-      "Built a production-ready job portal system",
-      "Implemented secure authentication and role-based access",
-      "Successfully deployed full-stack app on Vercel and Render",
-      "Improved understanding of webhooks and backend integration",
-      "Strengthened real-world deployment and debugging skills"
-    ],
-
-    testimonial: {
-      text:
-        "A complete full-stack hiring platform demonstrating authentication, backend integration, and production deployment skills.",
-      author: "Personal Project",
-      role: "Full Stack Developer"
-    }
+    technical: 'Built with Next.js and TypeScript, with PostgreSQL and Prisma for persistent operational data. The application combines dashboards, permission-aware workflows and an auditable record of activity.',
+    outcome: 'A functional platform demonstrated to the client three to four times. The workflows are working, with final review by the client and their colleagues still pending.',
+    proof: '7 business units · Multiple client demos',
   },
   {
-    id: 3,
-    title: "Vaulta",
-    category: "frontend",
-    featured: true,
-    image: "/project-images/vaulta.png",
-    description:
-      "A modern digital agency website designed for Vaulta to showcase high-converting web design and paid advertising services. The platform was built with React and custom CSS to create a polished, responsive experience featuring animated hero particles, horizontal project sliders, video integration, floating WhatsApp contact, client testimonials, and a conversion-focused contact section tailored for lead generation.",
-
-    shortDescription:
-      "A premium React agency website built to convert visitors into leads through modern UI and responsive design.",
-
-    technologies: [
-      "React",
-      "JavaScript",
-      "CSS3",
-      "Responsive Design",
-      "Ionicons"
-    ],
-
-    github: "https://github.com/BensonTochukwu/vaulta",
-    demo: "https://vaulta.ng",
-
-    status: "Completed",
-    year: "2026",
-    duration: "1-2 weeks",
-    team: "Solo Project",
-    client: "Vaulta",
-
-    rating: 4.9,
-
+    slug: 'nysc-nin', name: 'NYSC NIN Submission', number: '03',
+    category: 'Public service', color: '#b5a0ff', image: '/work/nysc-nin.webp',
+    imageAlt: 'NYSC NIN submission admin dashboard showing submission management, state settings and export controls',
+    status: 'Live · Lagos and Ondo', role: 'Entire frontend + backend contributor',
+    headline: 'Less manual work. More submissions handled.',
+    summary: 'A live NIN submission platform with public upload flows, an admin dashboard and bulk exports. Supporting 2,262+ submissions across Lagos and Ondo.',
+    stack: ['React', 'NestJS', 'Prisma', 'PostgreSQL', 'S3 / R2'],
+    tags: ['Admin dashboard', 'File handling', 'API integration', 'Bulk exports'],
+    url: 'https://www.ondoninsubmission.com.ng/', urlLabel: 'Visit submission platform',
+    context: 'Collecting and preparing NIN documents involved manual file preparation and record management. The platform gives corps members a public submission interface and administrators a way to manage records and export standardized files.',
+    contribution: 'I built the entire frontend: the public NIN form, file uploads, validation and submission flow, plus the admin dashboard, submission management, search, filtering and export interfaces. In a two-person engineering team, I also contributed to the backend submission and file-handling flow, Prisma/PostgreSQL integration, PDF storage, Excel/CSV/ZIP exports, API integration and production deployment.',
     features: [
-      "Responsive mobile-first design",
-      "Animated floating hero particles",
-      "Auto-scrolling project showcase",
-      "Video-enabled about section",
-      "WhatsApp floating contact button",
-      "Client testimonial slider",
-      "Modern service cards",
-      "Split contact layout",
-      "Custom branding integration",
-      "Smooth scrolling navigation"
+      ['A complete submission experience', 'Public forms handle uploads, validation and the submission flow without requiring users to prepare every file manually.'],
+      ['Admin tools for real records', 'Submission management, search and filtering help administrators find and work with incoming records.'],
+      ['Useful exports', 'Excel, CSV and ZIP export workflows support reporting and bulk downloads of standardized NIN documents.'],
+      ['Automated document preparation', 'Working with the backend engineer, I helped automate file renaming, PDF conversion and compression—three previously manual steps.'],
     ],
-
-    challenges: [
-      "Creating a premium agency-style UI without using a framework",
-      "Balancing animation with performance",
-      "Building a responsive horizontal project slider",
-      "Integrating floating UI elements cleanly",
-      "Maintaining design consistency across all sections"
-    ],
-
-    results: [
-      "Created a conversion-focused business website",
-      "Improved frontend animation skills",
-      "Strengthened responsive design techniques",
-      "Demonstrates premium client-ready frontend work",
-      "Built a professional lead-generation interface"
-    ],
-
-    testimonial: {
-      text: "A polished digital agency website that combines branding, responsiveness, and conversion-focused design into a professional client-ready experience.",
-      author: "Personal Project",
-      role: "Frontend Developer"
-    }
+    technical: 'React and Vite on the frontend; NestJS, Prisma and PostgreSQL on the backend, with Redis/BullMQ and S3/R2 in the platform stack. My backend contribution focused on submissions, files, database integration and exports.',
+    outcome: 'A live platform supporting Lagos and Ondo with 2,262+ submissions. I built the complete frontend and contributed to the backend alongside the other engineer.',
+    proof: '2,262+ submissions · 3 manual steps automated',
   },
   {
-    id: 4,
-    title: "Aku Group Engineering Services",
-    category: "frontend",
-    featured: true,
-    image: "/project-images/aku-group.png",
-    description:
-      "A professional business website built for Aku Group Engineering Services, a company specializing in plumbing, construction, and home maintenance. The site was designed to present their services clearly, attract potential clients, and provide a clean, responsive user experience.",
-    shortDescription:
-      "Business website for an engineering services company with a clean and responsive UI.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/BensonTochukwu/Aku-group",
-    demo: "https://bensontochukwu.github.io/Aku-group/",
-    status: "Completed",
-    year: "2026",
-    duration: "1-2 weeks",
-    team: "Solo Project",
-    client: "Aku Group Engineering Services",
-    rating: 4.8,
+    slug: 'zinny-food-zone', name: 'Zinny Food Zone', number: '04',
+    category: 'Commerce', color: '#f8ab72', image: '/work/zinny-food-zone.webp',
+    imageAlt: 'Zinny Food Zone storefront with grocery shopping, monthly packages and member account information',
+    status: 'Live · 400+ platform users', role: 'Full-stack developer',
+    headline: 'Everyday groceries. A serious system underneath.',
+    summary: 'A grocery and monthly package platform with member accounts, an admin dashboard, a separate Help Desk and verified payment processing.',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'Paystack'],
+    tags: ['Data migration', 'Role-based access', 'Payment webhooks', 'Order management'],
+    url: 'https://help.zinnyfoodzone.com/', urlLabel: 'Visit Help Desk',
+    context: 'Zinny Food Zone needed a full-stack platform for grocery shopping and monthly packages, alongside customer and operational management. Moving from Bubble also meant carrying existing customer, subscription and transaction records into the new system.',
+    contribution: 'I developed the full-stack platform with a public storefront and separate Help Desk. The work included authenticated member accounts, admin tools, role-based access, catalogue and order management, image uploads, data migration and payment integration.',
     features: [
-      "Clean and professional business layout",
-      "Responsive design for all screen sizes",
-      "Service showcase sections",
-      "Contact and inquiry section",
-      "Smooth navigation and scrolling",
-      "Modern UI styling",
+      ['Storefront and member accounts', 'Grocery shopping and monthly packages connect to authenticated customer accounts.'],
+      ['Tools for the business', 'An admin dashboard, role-based access, catalogue management, orders and image uploads support daily operations.'],
+      ['Existing data carried forward', 'Customer, subscription and transaction data migrated from Bubble, with ledger-based wallet balances.'],
+      ['Verified payment events', 'A Paystack webhook integration verifies payment events and handles duplicates safely.'],
     ],
-    challenges: [
-      "Designing a layout suitable for a service-based business",
-      "Presenting multiple services clearly",
-      "Ensuring responsiveness across devices",
-      "Balancing simplicity with professionalism",
-    ],
-    results: [
-      "Delivered a professional online presence for the business",
-      "Improved user accessibility and navigation",
-      "Demonstrates real-world project experience",
-      "Fully responsive and deployed website",
-    ],
-    testimonial: {
-      text: "A clean and professional website that effectively represents a real-world business and its services.",
-      author: "Client Project",
-      role: "Frontend Developer",
-    },
+    technical: 'Next.js, TypeScript and Supabase support the application, authentication and data layer. Ledger-based wallet balances and verified, duplicate-safe Paystack webhook processing connect payments to customer records.',
+    outcome: 'A live platform with more than 400 users. The build combines a customer-facing experience with the database, administrative tools and payment flows behind it.',
+    proof: '400+ platform users · Bubble migration',
   },
-  {
-    id: 5,
-    title: "Personal Portfolio",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/Portfolio.png",
-    description:
-      "A modern personal portfolio website built to showcase my projects, skills, and services. Designed with a focus on clean UI, responsiveness, and smooth user experience, it reflects my approach to frontend development and growing full stack capabilities.",
-    shortDescription:
-      "Personal portfolio showcasing projects, skills, and frontend development expertise.",
-    technologies: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
-    github: "https://github.com/BensonTochukwu/Bensons-Portfolio",
-    demo: "https://bensons-portfolio.vercel.app/",
-    status: "Completed",
-    year: "2026",
-    duration: "Ongoing",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.8,
-    features: [
-      "Modern and responsive design",
-      "Project showcase section",
-      "Dynamic UI components",
-      "Smooth animations and transitions",
-      "Contact form integration",
-      "Optimized performance",
-      "Clean and structured codebase",
-    ],
-    challenges: [
-      "Designing a clean and unique personal brand",
-      "Structuring content for clarity and impact",
-      "Ensuring responsiveness across all devices",
-      "Maintaining performance with animations",
-    ],
-    results: [
-      "Professional online presence",
-      "Showcases frontend and UI skills effectively",
-      "Improved component structuring and design thinking",
-      "Deployed and publicly accessible",
-    ],
-    testimonial: {
-      text: "A well-crafted portfolio that clearly presents skills, projects, and development approach.",
-      author: "Self Assessment",
-      role: "Frontend Developer",
-    },
-  },
-  {
-    id: 6,
-    title: "Velmora(In progress)",
-    category: "fullstack",
-    featured: false,
-    image: "/project-images/velmora.png",
-    description:
-      "A full-stack ecommerce platform currently in development, built with the MERN stack to deliver a modern online shopping experience. The application allows users to browse products, manage carts, place secure orders, and complete payments through Paystack. Cloudinary is integrated for product image storage, while the backend handles authentication, order management, and scalable product administration.",
+]
 
-    shortDescription:
-      "A secure MERN ecommerce platform featuring role-based authentication, protected admin access, and scalable backend architecture for modern online shopping.",
-
-    technologies: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Cloudinary",
-      "Paystack"
-    ],
-
-    github: "https://github.com/BensonTochukwu/velmora",
-    demo: "https://github.com/BensonTochukwu/velmora",
-
-    status: "In Progress",
-    year: "2026",
-    duration: "Ongoing",
-    team: "Solo Project",
-    client: "Personal Project",
-
-    rating: 4.8,
-
-    features: [
-      "User authentication and authorization",
-      "Dynamic product catalog",
-      "Shopping cart functionality",
-      "Secure Paystack payment integration",
-      "Cloudinary product image uploads",
-      "Admin product management dashboard",
-      "Order tracking system",
-      "Responsive mobile-friendly UI"
-    ],
-
-    challenges: [
-      "Integrating secure Paystack payment workflows",
-      "Managing product images with Cloudinary",
-      "Synchronizing frontend and backend state",
-      "Designing scalable database models",
-      "Handling protected admin routes"
-    ],
-
-    results: [
-      "Expanding full-stack development skills",
-      "Improving payment gateway integration knowledge",
-      "Strengthening backend API architecture",
-      "Building a production-style ecommerce platform",
-      "Demonstrating real-world MERN application structure"
-    ],
-
-    testimonial: {
-      text: "A growing ecommerce platform that demonstrates practical full-stack development, payment integration, and scalable architecture.",
-      author: "Personal Project",
-      role: "Full Stack Developer"
-    }
-  },
-  {
-    id: 7,
-    title: "Growvia",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/growvia.png",
-    description:
-      "A modern SEO and business growth agency website built to help brands showcase search optimization, content strategy, and online visibility services. Developed with React and Tailwind CSS, the platform delivers a clean, responsive experience with engaging layouts, service highlights, trust sections, and conversion-focused call-to-actions designed to turn visitors into potential clients.",
-
-    shortDescription:
-      "A modern SEO agency website built with React and Tailwind CSS for lead generation and brand growth.",
-
-    technologies: [
-      "React",
-      "JavaScript",
-      "Tailwind CSS",
-      "Responsive Design",
-      "Framer Motion"
-    ],
-
-    github: "https://github.com/BensonTochukwu/growvia",
-    demo: "https://growvia-ng.netlify.app",
-
-    status: "Completed",
-    year: "2026",
-    duration: "1-2 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-
-    rating: 4.9,
-
-    features: [
-      "Modern responsive layout",
-      "SEO service showcase sections",
-      "Animated hero section",
-      "Trust-building statistics display",
-      "Smooth scrolling navigation",
-      "Conversion-focused CTA sections",
-      "Mobile-first design",
-      "Optimized performance"
-    ],
-
-    challenges: [
-      "Creating a distinct agency identity separate from previous projects",
-      "Balancing modern design with readability",
-      "Maintaining consistent spacing across sections",
-      "Improving responsiveness on smaller devices",
-      "Structuring content for higher conversion"
-    ],
-
-    results: [
-      "Built a professional SEO agency website",
-      "Improved Tailwind CSS workflow",
-      "Strengthened React component structure",
-      "Enhanced responsive UI design skills",
-      "Added another client-style project to portfolio"
-    ],
-
-    testimonial: {
-      text: "A polished agency website that combines modern design, responsiveness, and conversion-driven structure for a professional business presence.",
-      author: "Personal Project",
-      role: "Frontend Developer"
-    }
-  },
-  {
-    id: 8,
-    title: "CraveHub",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/cravehub.png",
-    description:
-      "A modern fast food website built with HTML, CSS, and JavaScript, designed to provide an engaging and responsive user experience. The platform showcases menu items, promotions, and smooth navigation tailored for food businesses.",
-    shortDescription:
-      "Fast food website with responsive design and interactive UI.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/BensonTochukwu/crave-hub",
-    demo: "https://bensontochukwu.github.io/crave-hub/",
-    status: "Completed",
-    year: "2025",
-    duration: "2 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.5,
-    features: [
-      "Responsive design for all devices",
-      "Interactive menu display",
-      "Smooth scrolling navigation",
-      "Modern UI layout",
-      "Mobile-friendly interface",
-      "Clean and structured code",
-    ],
-    challenges: [
-      "Designing an engaging food-themed UI",
-      "Ensuring responsiveness across devices",
-      "Implementing smooth interactions with JavaScript",
-    ],
-    results: [
-      "Fully responsive website",
-      "Improved UI/UX design skills",
-      "Demonstrates real-world business layout",
-    ],
-    testimonial: {
-      text: "A clean and engaging fast food website showcasing strong frontend fundamentals.",
-      author: "Self Assessment",
-      role: "Frontend Developer",
-    },
-  },
-  {
-    id: 9,
-    title: "Bookly",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/bookly.png",
-    description:
-      "A book platform interface built with HTML, CSS, and JavaScript, allowing users to explore books in a clean and structured layout. Focused on usability, responsiveness, and interactive elements.",
-    shortDescription:
-      "Book platform UI with responsive layout and clean design.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/BensonTochukwu/Bookly",
-    demo: "https://bensontochukwu.github.io/Bookly/",
-    status: "Completed",
-    year: "2025",
-    duration: "2 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.5,
-    features: [
-      "Clean book listing interface",
-      "Responsive layout",
-      "Interactive UI elements",
-      "Organized content structure",
-      "Smooth navigation",
-    ],
-    challenges: [
-      "Structuring content for readability",
-      "Designing a user-friendly layout",
-      "Maintaining responsiveness",
-    ],
-    results: [
-      "Improved UI structuring skills",
-      "Demonstrates content-driven design",
-      "Responsive and accessible interface",
-    ],
-    testimonial: {
-      text: "A well-structured platform highlighting clean UI and frontend development skills.",
-      author: "Self Assessment",
-      role: "Frontend Developer",
-    },
-  },
-  {
-    id: 10,
-    title: "Busway",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/busway.png",
-    description:
-      "A bus travel platform interface built with HTML, CSS, and JavaScript, designed to simulate a transportation booking experience with a focus on layout, responsiveness, and usability.",
-    shortDescription:
-      "Travel platform UI focused on booking experience and responsiveness.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/BensonTochukwu/bus-way",
-    demo: "https://bensontochukwu.github.io/bus-way/",
-    status: "Completed",
-    year: "2025",
-    duration: "2 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.5,
-    features: [
-      "Travel booking interface design",
-      "Responsive layout",
-      "Interactive elements",
-      "Clean navigation structure",
-      "Mobile-friendly UI",
-    ],
-    challenges: [
-      "Designing a realistic booking interface",
-      "Handling layout complexity",
-      "Ensuring smooth responsiveness",
-    ],
-    results: [
-      "Demonstrates real-world application design",
-      "Improved layout structuring",
-      "Responsive and user-friendly interface",
-    ],
-    testimonial: {
-      text: "A practical travel platform UI demonstrating strong layout and responsiveness skills.",
-      author: "Self Assessment",
-      role: "Frontend Developer",
-    },
-  },
-  {
-    id: 11,
-    title: "Sofora",
-    category: "frontend",
-    featured: false,
-    image: "/project-images/sofora.png",
-    description:
-      "An interior design store website built with HTML, CSS, and JavaScript, focusing on aesthetics, layout design, and a visually appealing user experience.",
-    shortDescription:
-      "Interior design store website with clean layout and modern UI.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/BensonTochukwu/sofora",
-    demo: "https://bensontochukwu.github.io/sofora/",
-    status: "Completed",
-    year: "2025",
-    duration: "2 weeks",
-    team: "Solo Project",
-    client: "Personal Project",
-    rating: 4.5,
-    features: [
-      "Modern interior design layout",
-      "Responsive design",
-      "Clean visual hierarchy",
-      "Interactive UI elements",
-      "Smooth user experience",
-    ],
-    challenges: [
-      "Creating visually appealing layouts",
-      "Balancing design and usability",
-      "Maintaining responsiveness",
-    ],
-    results: [
-      "Strong focus on UI/UX design",
-      "Improved styling and layout skills",
-      "Professional presentation",
-    ],
-    testimonial: {
-      text: "A visually appealing project showcasing strong frontend design and layout skills.",
-      author: "Self Assessment",
-      role: "Frontend Developer",
-    },
-  }
-];
+export const experiments = [
+  { name: 'TaskFlow', type: 'Personal project', image: '/work/taskflow.webp', description: 'A MERN task manager with authentication, profile management and Cloudinary uploads.', stack: 'React / Express / MongoDB', url: 'https://taskflow-ng.vercel.app', github: 'https://github.com/BensonTochukwu/TaskFlow-MERN-Project' },
+  { name: 'NextHire', type: 'Personal project', image: '/work/nexthire.webp', description: 'A job portal with recruiter tools, applications, Clerk authentication and resume uploads.', stack: 'React / Express / Clerk', url: 'https://next-hire-ng.vercel.app/', github: 'https://github.com/BensonTochukwu/NextHire' },
+  { name: 'Vaulta Agency', type: 'Agency website', image: '/work/vaulta-agency.webp', description: 'The public face of our creative and technology agency, built with React and custom CSS.', stack: 'React / JavaScript / CSS', url: 'https://vaulta.ng' },
+  { name: 'Aku Group', type: 'Business website', image: '/work/aku-group.webp', description: 'A responsive service website for an engineering, construction and maintenance business.', stack: 'HTML / CSS / JavaScript', url: 'https://bensontochukwu.github.io/Aku-group/' },
+]

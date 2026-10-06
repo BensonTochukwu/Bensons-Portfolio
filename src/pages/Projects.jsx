@@ -1,20 +1,7 @@
-import React from 'react';
-import Navbar from '../components/layout/Navbar';
-import Projects from '../components/sections/Projects';
-import Footer from '../components/layout/Footer';
+import SEO from '../components/SEO'
+import { SelectedWork, MoreWork } from '../components/Work'
+import Contact from '../components/Contact'
 
-const ProjectsPage = () => {
-  return (
-    <div className="page page--projects">
-      <Navbar />
-      <main>
-        <Projects />
-      </main>
-      <Footer />
-    </div>
-  );
-};
-
-export default ProjectsPage;
-
-
+export default function Projects() {
+  return <div className="work-page"><SEO title="Selected Work — Tochukwu Teco-Benson" path="/projects" /><SelectedWork showFilters /><MoreWork /><Contact /></div>
+}
