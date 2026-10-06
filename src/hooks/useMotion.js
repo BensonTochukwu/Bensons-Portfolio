@@ -21,17 +21,27 @@ export function useMotion(pathname) {
     media.addEventListener('change', revealAll)
     window.addEventListener('portfolio-motion-change',revealAll)
     const progress = document.querySelector('.scroll-progress')
+    const root = document.documentElement
+    let scrollbarTimer
     const updateProgress = () => {
       const total = document.documentElement.scrollHeight - window.innerHeight
       if (progress) progress.style.transform = `scaleX(${total > 0 ? window.scrollY / total : 0})`
     }
-    window.addEventListener('scroll', updateProgress, { passive: true })
+    const onScroll = () => {
+      updateProgress()
+      root.classList.add('benson-scroll-active')
+      clearTimeout(scrollbarTimer)
+      scrollbarTimer = setTimeout(() => root.classList.remove('benson-scroll-active'), 700)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
     updateProgress()
     return () => {
       observer?.disconnect()
       media.removeEventListener('change', revealAll)
       window.removeEventListener('portfolio-motion-change',revealAll)
-      window.removeEventListener('scroll', updateProgress)
+      window.removeEventListener('scroll', onScroll)
+      clearTimeout(scrollbarTimer)
+      root.classList.remove('benson-scroll-active')
     }
   }, [pathname])
 }
