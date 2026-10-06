@@ -2,7 +2,6 @@ export const projects = [
   {
     slug: 'vaulta-workspace', name: 'Vaulta Workspace', number: '01',
     category: 'Operations', color: '#ff668e', image: '/work/vaulta-workspace.webp',
-    imageWidth: 1600, imageHeight: 910,
     imageAlt: 'Vaulta Workspace dashboard with assigned tasks, creative reviews and team navigation',
     status: 'In use by the Vaulta team', role: 'Sole full-stack developer',
     headline: 'The workspace behind our work.',
@@ -25,7 +24,6 @@ export const projects = [
   {
     slug: 'babcock-operations', name: 'Babcock Operations', number: '02',
     category: 'Operations', color: '#9bcfa0', image: '/work/babcock-operations.webp',
-    imageWidth: 1600, imageHeight: 900,
     imageAlt: 'Babcock University business operations dashboard with requisitions, approvals and operational reports',
     status: 'Functional · Final stakeholder review', role: 'Sole engineer in a two-person project team',
     headline: 'Seven business units. One operational system.',
@@ -48,7 +46,6 @@ export const projects = [
   {
     slug: 'nysc-nin', name: 'NYSC NIN Submission', number: '03',
     category: 'Public service', color: '#b5a0ff', image: '/work/nysc-nin.webp',
-    imageWidth: 1184, imageHeight: 1037,
     imageAlt: 'NYSC NIN submission admin dashboard showing submission management, state settings and export controls',
     status: 'Live · Lagos and Ondo', role: 'Entire frontend + backend contributor',
     headline: 'Less manual work. More submissions handled.',
@@ -71,7 +68,6 @@ export const projects = [
   {
     slug: 'zinny-food-zone', name: 'Zinny Food Zone', number: '04',
     category: 'Commerce', color: '#f8ab72', image: '/work/zinny-food-zone.webp',
-    imageWidth: 1600, imageHeight: 911,
     imageAlt: 'Zinny Food Zone storefront with grocery shopping, monthly packages and member account information',
     status: 'Live · 400+ platform users', role: 'Full-stack developer',
     headline: 'Everyday groceries. A serious system underneath.',

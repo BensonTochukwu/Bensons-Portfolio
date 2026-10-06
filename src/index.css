@@ -1028,19 +1028,6 @@ html[data-motion=off] .scene-browser,html[data-motion=off] .founder-screen,html[
 .is-pinned .scene-status, .is-pinned .scene-tools { margin-top:12px; }
 .is-pinned .scene-action { padding-top:18px; }
 .work-pagination button { min-height:44px; }
-/* Size each screenshot's frame to its own proportions and available space. */
-.scene-media { min-width:0; }
-@media (min-width:820px) and (min-height:600px) and (prefers-reduced-motion:no-preference) {
-  .is-pinned .scene-image { display:grid; grid-template-rows:minmax(0,1fr) auto; min-height:0; }
-  .is-pinned .scene-media { display:flex; align-items:center; justify-content:center; min-height:0; container-type:size; }
-  .is-pinned .scene-media .scene-browser {
-    display:block;
-    flex:none;
-    width:min(100%,calc((100cqh - 26px) * var(--image-ratio)));
-    max-width:100%;
-  }
-  .is-pinned .scene-media .scene-browser img { display:block; flex:none; width:100%; height:auto; }
-}
 /* Fit the pinned stage to laptop windows, including shorter browser viewports. */
 @media (min-width:820px) and (min-height:600px) and (prefers-reduced-motion:no-preference) {
   .is-pinned .work-pin { display:flex; flex-direction:column; }
