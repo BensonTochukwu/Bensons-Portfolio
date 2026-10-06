@@ -17,7 +17,7 @@ export function WorkShowcase() {
   const [active,setActive]=useState(0)
   useEffect(()=>{
     const section=root.current, element=track.current
-    const media=matchMedia('(min-width: 1000px) and (min-height: 860px)')
+    const media=matchMedia('(min-width: 820px) and (min-height: 600px)')
     const reduced=matchMedia('(prefers-reduced-motion: reduce)')
     let frame=0
     const update=()=>{

@@ -1028,6 +1028,39 @@ html[data-motion=off] .scene-browser,html[data-motion=off] .founder-screen,html[
 .is-pinned .scene-status, .is-pinned .scene-tools { margin-top:12px; }
 .is-pinned .scene-action { padding-top:18px; }
 .work-pagination button { min-height:44px; }
+/* Fit the pinned stage to laptop windows, including shorter browser viewports. */
+@media (min-width:820px) and (min-height:600px) and (prefers-reduced-motion:no-preference) {
+  .is-pinned .work-pin { display:flex; flex-direction:column; }
+  .is-pinned .work-stage-heading, .is-pinned .work-stage-bottom { flex-shrink:0; }
+  .is-pinned .work-stage { flex:1; min-height:0; }
+  .is-pinned .work-track, .is-pinned .work-scene { height:100%; }
+  .is-pinned .scene-copy { min-width:0; }
+  .is-pinned .scene-image { min-height:0; }
+  .is-pinned .scene-browser { display:flex; flex-direction:column; min-height:0; }
+  .is-pinned .scene-browser .window-bar { flex-shrink:0; }
+  .is-pinned .scene-browser img { flex:1; min-height:0; object-fit:contain; }
+  .is-pinned .scene-proof { flex-shrink:0; }
+}
+@media (min-width:820px) and (min-height:600px) and (max-height:780px) and (prefers-reduced-motion:no-preference),
+       (min-width:820px) and (min-height:600px) and (max-width:1050px) and (prefers-reduced-motion:no-preference) {
+  .is-pinned .work-pin { padding-block:14px 12px; }
+  .is-pinned .work-stage-heading { margin-bottom:16px; }
+  .is-pinned .work-stage-heading h2 { font-size:32px; letter-spacing:-1.6px; margin-top:8px; }
+  .is-pinned .work-stage-heading>div:last-child { gap:18px; }
+  .is-pinned .work-count { font-size:36px; }
+  .is-pinned .work-scene { grid-template-columns:.9fr 1.1fr; padding:20px; }
+  .is-pinned .scene-copy { padding-right:18px; }
+  .is-pinned .scene-copy h3 { font-size:28px; letter-spacing:-1px; margin-top:10px; }
+  .is-pinned .scene-copy>p { font-size:11px; line-height:1.5; margin-top:10px; }
+  .is-pinned .scene-status, .is-pinned .scene-tools { margin-top:8px; }
+  .is-pinned .scene-tools { gap:4px 9px; }
+  .is-pinned .scene-action { padding-top:12px; gap:14px; }
+  .is-pinned .scene-button { width:44px; height:44px; }
+  .is-pinned .scene-image { padding-left:8px; }
+  .is-pinned .scene-proof { padding-top:10px; margin-top:14px; }
+  .is-pinned .work-stage-bottom { padding-top:12px; gap:16px; }
+  .is-pinned .work-stage-bottom>span:last-child { display:none; }
+}
 @media (max-width:760px) {
   .hero-meta { gap:18px; align-items:start; }
   .hero-meta>.eyebrow { max-width:46%; font-size:11px; letter-spacing:.2px; }
